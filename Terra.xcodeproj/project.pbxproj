@@ -1,0 +1,1293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FE8CFF388CBF74A22206F81 /* Pods_TerraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CBBD4D076E01AEC53AC715 /* Pods_TerraUITests.framework */; };
+		C00C5231231F606900EE9426 /* mapreading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00C5230231F606900EE9426 /* mapreading.storyboard */; };
+		C00C5233231F614300EE9426 /* maplessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C5232231F614300EE9426 /* maplessons.swift */; };
+		C00C5236231F62F100EE9426 /* bearing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C5235231F62F100EE9426 /* bearing@3x.png */; };
+		C00C5238231F62F900EE9426 /* compass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C5237231F62F900EE9426 /* compass@3x.png */; };
+		C00C523A231F630200EE9426 /* contour_lines@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C5239231F630200EE9426 /* contour_lines@3x.png */; };
+		C00C523C231F630900EE9426 /* gridreferences@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C523B231F630900EE9426 /* gridreferences@3x.png */; };
+		C00C523E231F631200EE9426 /* scale_and_distances@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C523D231F631200EE9426 /* scale_and_distances@3x.png */; };
+		C00C5240231F631D00EE9426 /* settlements@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C523F231F631D00EE9426 /* settlements@3x.png */; };
+		C00C5242231F632E00EE9426 /* titles_and_symbols@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C5241231F632D00EE9426 /* titles_and_symbols@3x.png */; };
+		C00C5244231F677D00EE9426 /* grid_references_lessons@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C5243231F677D00EE9426 /* grid_references_lessons@3x.png */; };
+		C00C5246231F68FF00EE9426 /* titles_and_symbols_lessons@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C5245231F68FE00EE9426 /* titles_and_symbols_lessons@3x.png */; };
+		C00C5248231F69D800EE9426 /* scale_and_distances_lessons@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C5247231F69D700EE9426 /* scale_and_distances_lessons@3x.png */; };
+		C00C524A231F6A7B00EE9426 /* bearing_lessons@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C5249231F6A7B00EE9426 /* bearing_lessons@3x.png */; };
+		C00C524C231F6B3C00EE9426 /* compass_lessons@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C524B231F6B3C00EE9426 /* compass_lessons@3x.png */; };
+		C00C524E231F6BEC00EE9426 /* contour_lines_lessons@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00C524D231F6BEC00EE9426 /* contour_lines_lessons@3x.png */; };
+		C00C5252231F6E6C00EE9426 /* bukittimah.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00C5251231F6E6C00EE9426 /* bukittimah.storyboard */; };
+		C00C5256231F6FFB00EE9426 /* bthill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C5255231F6FFB00EE9426 /* bthill.swift */; };
+		C00DD9302314EFBF004C2195 /* terralessons@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00DD92F2314EFBF004C2195 /* terralessons@3x.png */; };
+		C00DD9322314EFC7004C2195 /* terraprogress@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00DD9312314EFC7004C2195 /* terraprogress@3x.png */; };
+		C00DD9342314EFCF004C2195 /* terrawelcome@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00DD9332314EFCF004C2195 /* terrawelcome@3x.png */; };
+		C00DD9362314F02D004C2195 /* gradientnext@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00DD9352314F02D004C2195 /* gradientnext@3x.png */; };
+		C00DD9382314F042004C2195 /* whitenext@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00DD9372314F041004C2195 /* whitenext@3x.png */; };
+		C00DD93A2314F25B004C2195 /* whitestarted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00DD9392314F25B004C2195 /* whitestarted@3x.png */; };
+		C00DD93C2314F351004C2195 /* welcomescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00DD93B2314F351004C2195 /* welcomescreen.swift */; };
+		C00DD93E2314F372004C2195 /* terralessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00DD93D2314F372004C2195 /* terralessons.swift */; };
+		C00DD9402314F469004C2195 /* gradientstarted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00DD93F2314F469004C2195 /* gradientstarted@3x.png */; };
+		C00DD9422314F6A2004C2195 /* aboutbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00DD9412314F6A2004C2195 /* aboutbutton@3x.png */; };
+		C00DD9462314F758004C2195 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00DD9452314F758004C2195 /* File.swift */; };
+		C00DD94823160469004C2195 /* Group 1628@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C00DD94723160469004C2195 /* Group 1628@3x.png */; };
+		C05B2DBB230911EF004C0F19 /* cphelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B2DBA230911EF004C0F19 /* cphelp.swift */; };
+		C05B609B22FAB578005C9530 /* checkpointlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B609A22FAB578005C9530 /* checkpointlist.swift */; };
+		C05B60A123000F08005C9530 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B60A023000F08005C9530 /* TabBarController.swift */; };
+		C05FCF5D2322942400D82602 /* battle_overview@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF5C2322942400D82602 /* battle_overview@3x.png */; };
+		C05FCF5F2322942D00D82602 /* bthill2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF5E2322942D00D82602 /* bthill2@3x.png */; };
+		C05FCF612322943900D82602 /* bthill3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF602322943800D82602 /* bthill3@3x.png */; };
+		C05FCF632322944300D82602 /* bthill4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF622322944300D82602 /* bthill4@3x.png */; };
+		C05FCF652322944D00D82602 /* bthillbattle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF642322944C00D82602 /* bthillbattle@3x.png */; };
+		C05FCF672322965200D82602 /* bthillbattle2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF662322965200D82602 /* bthillbattle2@3x.png */; };
+		C05FCF6923229A2500D82602 /* bthillslides.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05FCF6823229A2500D82602 /* bthillslides.swift */; };
+		C05FCF6B23229D1100D82602 /* bthill5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF6A23229D1000D82602 /* bthill5@3x.png */; };
+		C05FCF6D23229F2E00D82602 /* trf_characteristics@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF6C23229F2E00D82602 /* trf_characteristics@3x.png */; };
+		C05FCF6F23229F3500D82602 /* trf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF6E23229F3500D82602 /* trf.storyboard */; };
+		C05FCF732322A28D00D82602 /* canopy_layer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF722322A28D00D82602 /* canopy_layer@3x.png */; };
+		C05FCF752322A29600D82602 /* emergent_layer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF742322A29600D82602 /* emergent_layer@3x.png */; };
+		C05FCF772322A29E00D82602 /* undergrowth_layer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF762322A29E00D82602 /* undergrowth_layer@3x.png */; };
+		C05FCF792322A56800D82602 /* canopylesson@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF782322A56800D82602 /* canopylesson@3x.png */; };
+		C05FCF7B2322A57100D82602 /* emergentlesson@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF7A2322A57100D82602 /* emergentlesson@3x.png */; };
+		C05FCF7D2322A57E00D82602 /* undergrowthlesson@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF7C2322A57E00D82602 /* undergrowthlesson@3x.png */; };
+		C05FCF812322A7E800D82602 /* climatechange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF802322A7E800D82602 /* climatechange.storyboard */; };
+		C05FCF832322A89100D82602 /* climate_change@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF822322A89100D82602 /* climate_change@3x.png */; };
+		C05FCF852322A89B00D82602 /* global_warming@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF842322A89B00D82602 /* global_warming@3x.png */; };
+		C05FCF872322A8A600D82602 /* globalwarminglesson@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF862322A8A500D82602 /* globalwarminglesson@3x.png */; };
+		C05FCF892322A8B100D82602 /* greenhouselesson@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF882322A8B000D82602 /* greenhouselesson@3x.png */; };
+		C05FCF8B2322A8D200D82602 /* cclesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05FCF8A2322A8D200D82602 /* cclesson.swift */; };
+		C05FCF8D2322AC5F00D82602 /* trail-1.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF8C2322AC5F00D82602 /* trail-1.png */; };
+		C05FCF8F2322BA4C00D82602 /* creditspage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF8E2322BA4C00D82602 /* creditspage@3x.png */; };
+		C05FCF912322BC0B00D82602 /* CP5_not@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF902322BC0B00D82602 /* CP5_not@3x.png */; };
+		C05FCF932322BC1500D82602 /* CP5_reached@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF922322BC1500D82602 /* CP5_reached@3x.png */; };
+		C05FCF952322BC2500D82602 /* CP6_not@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF942322BC2500D82602 /* CP6_not@3x.png */; };
+		C05FCF972322BC3200D82602 /* CP6_reached@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF962322BC3200D82602 /* CP6_reached@3x.png */; };
+		C05FCF992322BC3B00D82602 /* CP7_not@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF982322BC3B00D82602 /* CP7_not@3x.png */; };
+		C05FCF9B2322BC4300D82602 /* CP7_reached@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF9A2322BC4300D82602 /* CP7_reached@3x.png */; };
+		C05FCF9D2322BC4E00D82602 /* CP8_not@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF9C2322BC4E00D82602 /* CP8_not@3x.png */; };
+		C05FCF9F2322BC5A00D82602 /* CP8_reache@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCF9E2322BC5A00D82602 /* CP8_reache@3x.png */; };
+		C05FCFA12322BC6800D82602 /* CP9_not@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCFA02322BC6800D82602 /* CP9_not@3x.png */; };
+		C05FCFA32322BC7000D82602 /* CP9_reached@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C05FCFA22322BC7000D82602 /* CP9_reached@3x.png */; };
+		C0737B842322CDF5008EE4F3 /* Screenshot 2019-09-07 at 1.24.44 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = C0737B832322CDF5008EE4F3 /* Screenshot 2019-09-07 at 1.24.44 AM.png */; };
+		C07577192305054C00C133E2 /* geographybutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C07577162305054C00C133E2 /* geographybutton@3x.png */; };
+		C075771A2305054C00C133E2 /* historybutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C07577172305054C00C133E2 /* historybutton@3x.png */; };
+		C075771B2305054C00C133E2 /* climatechangebutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C07577182305054C00C133E2 /* climatechangebutton@3x.png */; };
+		C075771D230505D500C133E2 /* customtabbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C075771C230505D500C133E2 /* customtabbar@3x.png */; };
+		C0A00E3823050DBE00D6CB69 /* NC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00E3723050DBE00D6CB69 /* NC.swift */; };
+		C0A00E3E2305101E00D6CB69 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E392305101D00D6CB69 /* Poppins-Light.ttf */; };
+		C0A00E3F2305101E00D6CB69 /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E3A2305101D00D6CB69 /* Poppins-Medium.otf */; };
+		C0A00E402305101E00D6CB69 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E3B2305101E00D6CB69 /* Poppins-Bold.ttf */; };
+		C0A00E412305101E00D6CB69 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E3C2305101E00D6CB69 /* Poppins-Regular.ttf */; };
+		C0A00E422305101E00D6CB69 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E3D2305101E00D6CB69 /* Poppins-SemiBold.otf */; };
+		C0A00E432305104B00D6CB69 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E3D2305101E00D6CB69 /* Poppins-SemiBold.otf */; };
+		C0A00E442305104B00D6CB69 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E3D2305101E00D6CB69 /* Poppins-SemiBold.otf */; };
+		C0A00E4823051DA300D6CB69 /* mapheader@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E4723051DA200D6CB69 /* mapheader@3x.png */; };
+		C0A00E4A23051E8A00D6CB69 /* oeeheader@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E4923051E8A00D6CB69 /* oeeheader@3x.png */; };
+		C0A00E4B23051EB100D6CB69 /* oeeheader@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E4923051E8A00D6CB69 /* oeeheader@3x.png */; };
+		C0A00E4D23051EB300D6CB69 /* oeeheader@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E4923051E8A00D6CB69 /* oeeheader@3x.png */; };
+		C0A00E4E23051F2F00D6CB69 /* NC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00E3723050DBE00D6CB69 /* NC.swift */; };
+		C0A00E5023051F3000D6CB69 /* NC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00E3723050DBE00D6CB69 /* NC.swift */; };
+		C0A00E52230520B200D6CB69 /* checkpointheader@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E51230520B200D6CB69 /* checkpointheader@3x.png */; };
+		C0A00E642305363500D6CB69 /* checkpointlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B609A22FAB578005C9530 /* checkpointlist.swift */; };
+		C0A00E652305363600D6CB69 /* checkpointlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B609A22FAB578005C9530 /* checkpointlist.swift */; };
+		C0A00E6723053E0100D6CB69 /* CP1_not@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E6623053E0100D6CB69 /* CP1_not@3x.png */; };
+		C0A00E6923053E0F00D6CB69 /* CP1_reached@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E6823053E0F00D6CB69 /* CP1_reached@3x.png */; };
+		C0A00E6B23053E1B00D6CB69 /* CP4_reached@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E6A23053E1B00D6CB69 /* CP4_reached@3x.png */; };
+		C0A00E6D23053E2500D6CB69 /* CP4_not@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E6C23053E2500D6CB69 /* CP4_not@3x.png */; };
+		C0A00E6F23053E6C00D6CB69 /* CP2_not@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E6E23053E6C00D6CB69 /* CP2_not@3x.png */; };
+		C0A00E7123053E7A00D6CB69 /* CP2_reached@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E7023053E7A00D6CB69 /* CP2_reached@3x.png */; };
+		C0A00E7323053E8400D6CB69 /* CP3_not@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E7223053E8400D6CB69 /* CP3_not@3x.png */; };
+		C0A00E7523053E8F00D6CB69 /* CP3_reached@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E7423053E8F00D6CB69 /* CP3_reached@3x.png */; };
+		C0A00E762309084600D6CB69 /* cpinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3AD72303B1D900739D6E /* cpinfo.swift */; };
+		C0A00E772309084600D6CB69 /* cpinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3AD72303B1D900739D6E /* cpinfo.swift */; };
+		C0A00E7923090C6000D6CB69 /* infobutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E7823090C5F00D6CB69 /* infobutton@3x.png */; };
+		C0A00E7B23090D8700D6CB69 /* resetbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E7A23090D8600D6CB69 /* resetbutton@3x.png */; };
+		C0A00E7C23090DA200D6CB69 /* resetbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E7A23090D8600D6CB69 /* resetbutton@3x.png */; };
+		C0A00E7D23090DA200D6CB69 /* resetbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A00E7A23090D8600D6CB69 /* resetbutton@3x.png */; };
+		C0BC3AC82303AD3D00739D6E /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3AC72303AD3D00739D6E /* History.swift */; };
+		C0BC3ACA2303AD4800739D6E /* Geography.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3AC92303AD4800739D6E /* Geography.swift */; };
+		C0BC3ACC2303AD5300739D6E /* Climate Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3ACB2303AD5300739D6E /* Climate Change.swift */; };
+		C0BC3ACD2303AF5A00739D6E /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3AC72303AD3D00739D6E /* History.swift */; };
+		C0BC3ACF2303AF5E00739D6E /* Geography.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3AC92303AD4800739D6E /* Geography.swift */; };
+		C0BC3AD02303AF5F00739D6E /* Geography.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3AC92303AD4800739D6E /* Geography.swift */; };
+		C0BC3AD12303AF6200739D6E /* Climate Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3ACB2303AD5300739D6E /* Climate Change.swift */; };
+		C0BC3AD22303AF6200739D6E /* Climate Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3ACB2303AD5300739D6E /* Climate Change.swift */; };
+		C0BC3AD82303B1D900739D6E /* cpinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3AD72303B1D900739D6E /* cpinfo.swift */; };
+		C0BC3ADA2303B59A00739D6E /* map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC3AD92303B59A00739D6E /* map.swift */; };
+		C0BC3ADC2303B65B00739D6E /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BC3ADB2303B65B00739D6E /* map.png */; };
+		C0BC3AE92303E9EB00739D6E /* credits@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BC3AE72303E9EB00739D6E /* credits@3x.png */; };
+		C0BC3AEA2303E9EB00739D6E /* getstarted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BC3AE82303E9EB00739D6E /* getstarted@3x.png */; };
+		C0BC3AEC2303EB5500739D6E /* startpage.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BC3AEB2303EB5400739D6E /* startpage.png */; };
+		C0BC3AEE2304FE8900739D6E /* TErraiCoN.001.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BC3AED2304FE8900739D6E /* TErraiCoN.001.png */; };
+		C0BDD93B230A6C1100875F34 /* creditsheader@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BDD93A230A6C1100875F34 /* creditsheader@3x.png */; };
+		C0BDD93D230A6C8F00875F34 /* credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BDD93C230A6C8F00875F34 /* credits.swift */; };
+		C0BDD93F230A918700875F34 /* mapreading@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BDD93E230A918700875F34 /* mapreading@3x.png */; };
+		C0BDD941230A947A00875F34 /* rainforest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BDD940230A947A00875F34 /* rainforest@3x.png */; };
+		C0BDD943230A963600875F34 /* mapreading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BDD942230A963600875F34 /* mapreading.swift */; };
+		C0BDD945230BB85B00875F34 /* rainforest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BDD944230BB85B00875F34 /* rainforest.swift */; };
+		C0BDD947230E4A4A00875F34 /* bkthillbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BDD946230E4A4A00875F34 /* bkthillbutton@3x.png */; };
+		C0C77379231F9BC600B3D4CB /* settlements_lessons@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0C77378231F9BC600B3D4CB /* settlements_lessons@3x.png */; };
+		C0C8516D22FA81F800141CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C8516C22FA81F800141CAA /* AppDelegate.swift */; };
+		C0C8516F22FA81F800141CAA /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C8516E22FA81F800141CAA /* Lessons.swift */; };
+		C0C8517122FA81F800141CAA /* OEE_code.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C8517022FA81F800141CAA /* OEE_code.swift */; };
+		C0C8517422FA81F800141CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C8517222FA81F800141CAA /* Main.storyboard */; };
+		C0C8517622FA81FA00141CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C8517522FA81FA00141CAA /* Assets.xcassets */; };
+		C0C8517922FA81FA00141CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C8517722FA81FA00141CAA /* LaunchScreen.storyboard */; };
+		C0C8518422FA81FA00141CAA /* TerraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C8518322FA81FA00141CAA /* TerraTests.swift */; };
+		C0C8518F22FA81FA00141CAA /* TerraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C8518E22FA81FA00141CAA /* TerraUITests.swift */; };
+		C0C851C322FA878400141CAA /* Kaleko 105 Round W01 Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0C851C222FA878100141CAA /* Kaleko 105 Round W01 Bold.ttf */; };
+		C0C851C422FA878400141CAA /* Kaleko 105 Round W01 Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0C851C222FA878100141CAA /* Kaleko 105 Round W01 Bold.ttf */; };
+		C0C851C522FA878500141CAA /* Kaleko 105 Round W01 Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0C851C222FA878100141CAA /* Kaleko 105 Round W01 Bold.ttf */; };
+		C0C851C822FA87D400141CAA /* Terra_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C0C851C722FA87D400141CAA /* Terra_logo.png */; };
+		C0C851C922FA87D400141CAA /* Terra_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C0C851C722FA87D400141CAA /* Terra_logo.png */; };
+		C0C851CA22FA87D400141CAA /* Terra_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C0C851C722FA87D400141CAA /* Terra_logo.png */; };
+		C0C851CF22FAA8A300141CAA /* OEE_code.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C8517022FA81F800141CAA /* OEE_code.swift */; };
+		C0C851D022FAA8A300141CAA /* OEE_code.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C8517022FA81F800141CAA /* OEE_code.swift */; };
+		C0F79C0E2313869B0047D4ED /* climatechangelesson@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F79C0D2313869A0047D4ED /* climatechangelesson@3x.png */; };
+		C0FA8269240D1D6E001DBBE2 /* FF4D00-0.png in Resources */ = {isa = PBXBuildFile; fileRef = C0FA8268240D1D6E001DBBE2 /* FF4D00-0.png */; };
+		C0FA826B240D1D94001DBBE2 /* Rectangle 678.png in Resources */ = {isa = PBXBuildFile; fileRef = C0FA826A240D1D94001DBBE2 /* Rectangle 678.png */; };
+		C0FA826D240D1DC1001DBBE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0FA826C240D1DC1001DBBE2 /* GoogleService-Info.plist */; };
+		C3A0B4A6D610FB0C063C2D3C /* Pods_TerraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5222F401608EE2D917A4DBB0 /* Pods_TerraTests.framework */; };
+		E9E04650F1F1B81AA045DA2E /* Pods_Terra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E012DB0B9D2122A007589DE2 /* Pods_Terra.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0C8518022FA81FA00141CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C8516122FA81F800141CAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0C8516822FA81F800141CAA;
+			remoteInfo = Terra;
+		};
+		C0C8518B22FA81FA00141CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C8516122FA81F800141CAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0C8516822FA81F800141CAA;
+			remoteInfo = Terra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21DBEEEF3B7C8318CD0D11E4 /* Pods-Terra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terra.release.xcconfig"; path = "Target Support Files/Pods-Terra/Pods-Terra.release.xcconfig"; sourceTree = "<group>"; };
+		2482DC1E72EAB70E63369602 /* Pods-TerraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraUITests.release.xcconfig"; path = "Target Support Files/Pods-TerraUITests/Pods-TerraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		429F66736715AF922270A8CC /* Pods-TerraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraUITests.debug.xcconfig"; path = "Target Support Files/Pods-TerraUITests/Pods-TerraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5222F401608EE2D917A4DBB0 /* Pods_TerraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TerraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61CBBD4D076E01AEC53AC715 /* Pods_TerraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TerraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB366FBE1ECF83F606C1E83E /* Pods-TerraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraTests.debug.xcconfig"; path = "Target Support Files/Pods-TerraTests/Pods-TerraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF993E7DA45C6FAB79BD90F9 /* Pods-Terra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terra.debug.xcconfig"; path = "Target Support Files/Pods-Terra/Pods-Terra.debug.xcconfig"; sourceTree = "<group>"; };
+		B4885033A9FD15C68288F659 /* Pods-TerraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraTests.release.xcconfig"; path = "Target Support Files/Pods-TerraTests/Pods-TerraTests.release.xcconfig"; sourceTree = "<group>"; };
+		C00C5230231F606900EE9426 /* mapreading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mapreading.storyboard; sourceTree = "<group>"; };
+		C00C5232231F614300EE9426 /* maplessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maplessons.swift; sourceTree = "<group>"; };
+		C00C5235231F62F100EE9426 /* bearing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bearing@3x.png"; path = "../../TerraXD/bearing@3x.png"; sourceTree = "<group>"; };
+		C00C5237231F62F900EE9426 /* compass@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "compass@3x.png"; path = "../../TerraXD/compass@3x.png"; sourceTree = "<group>"; };
+		C00C5239231F630200EE9426 /* contour_lines@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "contour_lines@3x.png"; path = "../../TerraXD/contour_lines@3x.png"; sourceTree = "<group>"; };
+		C00C523B231F630900EE9426 /* gridreferences@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gridreferences@3x.png"; path = "../../TerraXD/gridreferences@3x.png"; sourceTree = "<group>"; };
+		C00C523D231F631200EE9426 /* scale_and_distances@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "scale_and_distances@3x.png"; path = "../../TerraXD/scale_and_distances@3x.png"; sourceTree = "<group>"; };
+		C00C523F231F631D00EE9426 /* settlements@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settlements@3x.png"; path = "../../TerraXD/settlements@3x.png"; sourceTree = "<group>"; };
+		C00C5241231F632D00EE9426 /* titles_and_symbols@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "titles_and_symbols@3x.png"; path = "../../TerraXD/titles_and_symbols@3x.png"; sourceTree = "<group>"; };
+		C00C5243231F677D00EE9426 /* grid_references_lessons@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grid_references_lessons@3x.png"; path = "../../TerraXD/grid_references_lessons@3x.png"; sourceTree = "<group>"; };
+		C00C5245231F68FE00EE9426 /* titles_and_symbols_lessons@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "titles_and_symbols_lessons@3x.png"; path = "../../TerraXD/titles_and_symbols_lessons@3x.png"; sourceTree = "<group>"; };
+		C00C5247231F69D700EE9426 /* scale_and_distances_lessons@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "scale_and_distances_lessons@3x.png"; path = "../../TerraXD/scale_and_distances_lessons@3x.png"; sourceTree = "<group>"; };
+		C00C5249231F6A7B00EE9426 /* bearing_lessons@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bearing_lessons@3x.png"; path = "../../TerraXD/bearing_lessons@3x.png"; sourceTree = "<group>"; };
+		C00C524B231F6B3C00EE9426 /* compass_lessons@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "compass_lessons@3x.png"; path = "../../TerraXD/compass_lessons@3x.png"; sourceTree = "<group>"; };
+		C00C524D231F6BEC00EE9426 /* contour_lines_lessons@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "contour_lines_lessons@3x.png"; path = "../../TerraXD/contour_lines_lessons@3x.png"; sourceTree = "<group>"; };
+		C00C5251231F6E6C00EE9426 /* bukittimah.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = bukittimah.storyboard; sourceTree = "<group>"; };
+		C00C5255231F6FFB00EE9426 /* bthill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bthill.swift; sourceTree = "<group>"; };
+		C00DD92F2314EFBF004C2195 /* terralessons@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "terralessons@3x.png"; path = "../../TerraXD/terralessons@3x.png"; sourceTree = "<group>"; };
+		C00DD9312314EFC7004C2195 /* terraprogress@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "terraprogress@3x.png"; path = "../../TerraXD/terraprogress@3x.png"; sourceTree = "<group>"; };
+		C00DD9332314EFCF004C2195 /* terrawelcome@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "terrawelcome@3x.png"; path = "../../TerraXD/terrawelcome@3x.png"; sourceTree = "<group>"; };
+		C00DD9352314F02D004C2195 /* gradientnext@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gradientnext@3x.png"; path = "../../TerraXD/gradientnext@3x.png"; sourceTree = "<group>"; };
+		C00DD9372314F041004C2195 /* whitenext@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whitenext@3x.png"; path = "../../TerraXD/whitenext@3x.png"; sourceTree = "<group>"; };
+		C00DD9392314F25B004C2195 /* whitestarted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whitestarted@3x.png"; path = "../../TerraXD/whitestarted@3x.png"; sourceTree = "<group>"; };
+		C00DD93B2314F351004C2195 /* welcomescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomescreen.swift; sourceTree = "<group>"; };
+		C00DD93D2314F372004C2195 /* terralessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = terralessons.swift; sourceTree = "<group>"; };
+		C00DD93F2314F469004C2195 /* gradientstarted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gradientstarted@3x.png"; path = "../../TerraXD/gradientstarted@3x.png"; sourceTree = "<group>"; };
+		C00DD9412314F6A2004C2195 /* aboutbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aboutbutton@3x.png"; path = "../../TerraXD/aboutbutton@3x.png"; sourceTree = "<group>"; };
+		C00DD9452314F758004C2195 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C00DD94723160469004C2195 /* Group 1628@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Group 1628@3x.png"; path = "../../TerraXD/Group 1628@3x.png"; sourceTree = "<group>"; };
+		C05B2DBA230911EF004C0F19 /* cphelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cphelp.swift; sourceTree = "<group>"; };
+		C05B609A22FAB578005C9530 /* checkpointlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkpointlist.swift; sourceTree = "<group>"; };
+		C05B60A023000F08005C9530 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C05FCF5C2322942400D82602 /* battle_overview@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "battle_overview@3x.png"; path = "../../TerraXD/battle_overview@3x.png"; sourceTree = "<group>"; };
+		C05FCF5E2322942D00D82602 /* bthill2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bthill2@3x.png"; path = "../../TerraXD/bthill2@3x.png"; sourceTree = "<group>"; };
+		C05FCF602322943800D82602 /* bthill3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bthill3@3x.png"; path = "../../TerraXD/bthill3@3x.png"; sourceTree = "<group>"; };
+		C05FCF622322944300D82602 /* bthill4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bthill4@3x.png"; path = "../../TerraXD/bthill4@3x.png"; sourceTree = "<group>"; };
+		C05FCF642322944C00D82602 /* bthillbattle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bthillbattle@3x.png"; path = "../../TerraXD/bthillbattle@3x.png"; sourceTree = "<group>"; };
+		C05FCF662322965200D82602 /* bthillbattle2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bthillbattle2@3x.png"; path = "../../TerraXD/bthillbattle2@3x.png"; sourceTree = "<group>"; };
+		C05FCF6823229A2500D82602 /* bthillslides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bthillslides.swift; sourceTree = "<group>"; };
+		C05FCF6A23229D1000D82602 /* bthill5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bthill5@3x.png"; path = "../../TerraXD/bthill5@3x.png"; sourceTree = "<group>"; };
+		C05FCF6C23229F2E00D82602 /* trf_characteristics@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trf_characteristics@3x.png"; path = "../../TerraXD/trf_characteristics@3x.png"; sourceTree = "<group>"; };
+		C05FCF6E23229F3500D82602 /* trf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = trf.storyboard; sourceTree = "<group>"; };
+		C05FCF722322A28D00D82602 /* canopy_layer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "canopy_layer@3x.png"; path = "../../TerraXD/canopy_layer@3x.png"; sourceTree = "<group>"; };
+		C05FCF742322A29600D82602 /* emergent_layer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emergent_layer@3x.png"; path = "../../TerraXD/emergent_layer@3x.png"; sourceTree = "<group>"; };
+		C05FCF762322A29E00D82602 /* undergrowth_layer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "undergrowth_layer@3x.png"; path = "../../TerraXD/undergrowth_layer@3x.png"; sourceTree = "<group>"; };
+		C05FCF782322A56800D82602 /* canopylesson@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "canopylesson@3x.png"; path = "../../TerraXD/canopylesson@3x.png"; sourceTree = "<group>"; };
+		C05FCF7A2322A57100D82602 /* emergentlesson@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emergentlesson@3x.png"; path = "../../TerraXD/emergentlesson@3x.png"; sourceTree = "<group>"; };
+		C05FCF7C2322A57E00D82602 /* undergrowthlesson@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "undergrowthlesson@3x.png"; path = "../../TerraXD/undergrowthlesson@3x.png"; sourceTree = "<group>"; };
+		C05FCF802322A7E800D82602 /* climatechange.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = climatechange.storyboard; sourceTree = "<group>"; };
+		C05FCF822322A89100D82602 /* climate_change@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "climate_change@3x.png"; path = "../../TerraXD/climate_change@3x.png"; sourceTree = "<group>"; };
+		C05FCF842322A89B00D82602 /* global_warming@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "global_warming@3x.png"; path = "../../TerraXD/global_warming@3x.png"; sourceTree = "<group>"; };
+		C05FCF862322A8A500D82602 /* globalwarminglesson@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "globalwarminglesson@3x.png"; path = "../../TerraXD/globalwarminglesson@3x.png"; sourceTree = "<group>"; };
+		C05FCF882322A8B000D82602 /* greenhouselesson@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "greenhouselesson@3x.png"; path = "../../TerraXD/greenhouselesson@3x.png"; sourceTree = "<group>"; };
+		C05FCF8A2322A8D200D82602 /* cclesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cclesson.swift; sourceTree = "<group>"; };
+		C05FCF8C2322AC5F00D82602 /* trail-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trail-1.png"; path = "../../../../Downloads/trail/trail-1.png"; sourceTree = "<group>"; };
+		C05FCF8E2322BA4C00D82602 /* creditspage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "creditspage@3x.png"; path = "../../TerraXD/creditspage@3x.png"; sourceTree = "<group>"; };
+		C05FCF902322BC0B00D82602 /* CP5_not@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP5_not@3x.png"; path = "../../TerraXD/CP5_not@3x.png"; sourceTree = "<group>"; };
+		C05FCF922322BC1500D82602 /* CP5_reached@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP5_reached@3x.png"; path = "../../TerraXD/CP5_reached@3x.png"; sourceTree = "<group>"; };
+		C05FCF942322BC2500D82602 /* CP6_not@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP6_not@3x.png"; path = "../../TerraXD/CP6_not@3x.png"; sourceTree = "<group>"; };
+		C05FCF962322BC3200D82602 /* CP6_reached@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP6_reached@3x.png"; path = "../../TerraXD/CP6_reached@3x.png"; sourceTree = "<group>"; };
+		C05FCF982322BC3B00D82602 /* CP7_not@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP7_not@3x.png"; path = "../../TerraXD/CP7_not@3x.png"; sourceTree = "<group>"; };
+		C05FCF9A2322BC4300D82602 /* CP7_reached@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP7_reached@3x.png"; path = "../../TerraXD/CP7_reached@3x.png"; sourceTree = "<group>"; };
+		C05FCF9C2322BC4E00D82602 /* CP8_not@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP8_not@3x.png"; path = "../../TerraXD/CP8_not@3x.png"; sourceTree = "<group>"; };
+		C05FCF9E2322BC5A00D82602 /* CP8_reache@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP8_reache@3x.png"; path = "../../TerraXD/CP8_reache@3x.png"; sourceTree = "<group>"; };
+		C05FCFA02322BC6800D82602 /* CP9_not@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP9_not@3x.png"; path = "../../TerraXD/CP9_not@3x.png"; sourceTree = "<group>"; };
+		C05FCFA22322BC7000D82602 /* CP9_reached@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP9_reached@3x.png"; path = "../../TerraXD/CP9_reached@3x.png"; sourceTree = "<group>"; };
+		C0737B832322CDF5008EE4F3 /* Screenshot 2019-09-07 at 1.24.44 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-09-07 at 1.24.44 AM.png"; path = "../../../Screenshot 2019-09-07 at 1.24.44 AM.png"; sourceTree = "<group>"; };
+		C07577162305054C00C133E2 /* geographybutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "geographybutton@3x.png"; path = "../../TerraXD/geographybutton@3x.png"; sourceTree = "<group>"; };
+		C07577172305054C00C133E2 /* historybutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "historybutton@3x.png"; path = "../../TerraXD/historybutton@3x.png"; sourceTree = "<group>"; };
+		C07577182305054C00C133E2 /* climatechangebutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "climatechangebutton@3x.png"; path = "../../TerraXD/climatechangebutton@3x.png"; sourceTree = "<group>"; };
+		C075771C230505D500C133E2 /* customtabbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "customtabbar@3x.png"; path = "../../TerraXD/customtabbar@3x.png"; sourceTree = "<group>"; };
+		C0A00E3723050DBE00D6CB69 /* NC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC.swift; sourceTree = "<group>"; };
+		C0A00E392305101D00D6CB69 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Light.ttf"; path = "../../../../Downloads/Poppins (1)/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		C0A00E3A2305101D00D6CB69 /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.otf"; path = "../../../../Downloads/poppins/Poppins-Medium.otf"; sourceTree = "<group>"; };
+		C0A00E3B2305101E00D6CB69 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "../../../../Downloads/Poppins (1)/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		C0A00E3C2305101E00D6CB69 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../Downloads/Poppins (1)/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		C0A00E3D2305101E00D6CB69 /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-SemiBold.otf"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Terra_Final/Fonts/Poppins-SemiBold.otf"; sourceTree = "<group>"; };
+		C0A00E4723051DA200D6CB69 /* mapheader@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapheader@3x.png"; path = "../../TerraXD/mapheader@3x.png"; sourceTree = "<group>"; };
+		C0A00E4923051E8A00D6CB69 /* oeeheader@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "oeeheader@3x.png"; path = "../../TerraXD/oeeheader@3x.png"; sourceTree = "<group>"; };
+		C0A00E51230520B200D6CB69 /* checkpointheader@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkpointheader@3x.png"; path = "../../TerraXD/checkpointheader@3x.png"; sourceTree = "<group>"; };
+		C0A00E6623053E0100D6CB69 /* CP1_not@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP1_not@3x.png"; path = "../../TerraXD/CP1_not@3x.png"; sourceTree = "<group>"; };
+		C0A00E6823053E0F00D6CB69 /* CP1_reached@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP1_reached@3x.png"; path = "../../TerraXD/CP1_reached@3x.png"; sourceTree = "<group>"; };
+		C0A00E6A23053E1B00D6CB69 /* CP4_reached@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP4_reached@3x.png"; path = "../../TerraXD/CP4_reached@3x.png"; sourceTree = "<group>"; };
+		C0A00E6C23053E2500D6CB69 /* CP4_not@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP4_not@3x.png"; path = "../../TerraXD/CP4_not@3x.png"; sourceTree = "<group>"; };
+		C0A00E6E23053E6C00D6CB69 /* CP2_not@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP2_not@3x.png"; path = "../../TerraXD/CP2_not@3x.png"; sourceTree = "<group>"; };
+		C0A00E7023053E7A00D6CB69 /* CP2_reached@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP2_reached@3x.png"; path = "../../TerraXD/CP2_reached@3x.png"; sourceTree = "<group>"; };
+		C0A00E7223053E8400D6CB69 /* CP3_not@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP3_not@3x.png"; path = "../../TerraXD/CP3_not@3x.png"; sourceTree = "<group>"; };
+		C0A00E7423053E8F00D6CB69 /* CP3_reached@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CP3_reached@3x.png"; path = "../../TerraXD/CP3_reached@3x.png"; sourceTree = "<group>"; };
+		C0A00E7823090C5F00D6CB69 /* infobutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "infobutton@3x.png"; path = "../../TerraXD/infobutton@3x.png"; sourceTree = "<group>"; };
+		C0A00E7A23090D8600D6CB69 /* resetbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "resetbutton@3x.png"; path = "../../TerraXD/resetbutton@3x.png"; sourceTree = "<group>"; };
+		C0BC3AC72303AD3D00739D6E /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		C0BC3AC92303AD4800739D6E /* Geography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geography.swift; sourceTree = "<group>"; };
+		C0BC3ACB2303AD5300739D6E /* Climate Change.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Climate Change.swift"; sourceTree = "<group>"; };
+		C0BC3AD72303B1D900739D6E /* cpinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpinfo.swift; sourceTree = "<group>"; };
+		C0BC3AD92303B59A00739D6E /* map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map.swift; sourceTree = "<group>"; };
+		C0BC3ADB2303B65B00739D6E /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../../map.png; sourceTree = "<group>"; };
+		C0BC3AE72303E9EB00739D6E /* credits@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "credits@3x.png"; path = "../../TerraXD/credits@3x.png"; sourceTree = "<group>"; };
+		C0BC3AE82303E9EB00739D6E /* getstarted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "getstarted@3x.png"; path = "../../TerraXD/getstarted@3x.png"; sourceTree = "<group>"; };
+		C0BC3AEB2303EB5400739D6E /* startpage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = startpage.png; path = ../../TerraXD/startpage.png; sourceTree = "<group>"; };
+		C0BC3AED2304FE8900739D6E /* TErraiCoN.001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TErraiCoN.001.png; path = ../../TErraiCoN/TErraiCoN.001.png; sourceTree = "<group>"; };
+		C0BDD93A230A6C1100875F34 /* creditsheader@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "creditsheader@3x.png"; path = "../../TerraXD/creditsheader@3x.png"; sourceTree = "<group>"; };
+		C0BDD93C230A6C8F00875F34 /* credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = credits.swift; sourceTree = "<group>"; };
+		C0BDD93E230A918700875F34 /* mapreading@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapreading@3x.png"; path = "../../TerraXD/mapreading@3x.png"; sourceTree = "<group>"; };
+		C0BDD940230A947A00875F34 /* rainforest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rainforest@3x.png"; path = "../../TerraXD/rainforest@3x.png"; sourceTree = "<group>"; };
+		C0BDD942230A963600875F34 /* mapreading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapreading.swift; sourceTree = "<group>"; };
+		C0BDD944230BB85B00875F34 /* rainforest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rainforest.swift; sourceTree = "<group>"; };
+		C0BDD946230E4A4A00875F34 /* bkthillbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkthillbutton@3x.png"; path = "../../TerraXD/bkthillbutton@3x.png"; sourceTree = "<group>"; };
+		C0C77378231F9BC600B3D4CB /* settlements_lessons@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settlements_lessons@3x.png"; path = "../../TerraXD/settlements_lessons@3x.png"; sourceTree = "<group>"; };
+		C0C8516922FA81F800141CAA /* Terra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C8516C22FA81F800141CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0C8516E22FA81F800141CAA /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
+		C0C8517022FA81F800141CAA /* OEE_code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OEE_code.swift; sourceTree = "<group>"; };
+		C0C8517322FA81F800141CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0C8517522FA81FA00141CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0C8517822FA81FA00141CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0C8517A22FA81FA00141CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C8517F22FA81FA00141CAA /* TerraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C8518322FA81FA00141CAA /* TerraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerraTests.swift; sourceTree = "<group>"; };
+		C0C8518522FA81FA00141CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C8518A22FA81FA00141CAA /* TerraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C8518E22FA81FA00141CAA /* TerraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerraUITests.swift; sourceTree = "<group>"; };
+		C0C8519022FA81FA00141CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C851C222FA878100141CAA /* Kaleko 105 Round W01 Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kaleko 105 Round W01 Bold.ttf"; path = "../../../../Downloads/OnlineWebFonts_COM_c473b95b72d64c28c9bec1c2afb68c02/Kaleko 105 Round W01 Bold/Kaleko 105 Round W01 Bold.ttf"; sourceTree = "<group>"; };
+		C0C851C722FA87D400141CAA /* Terra_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Terra_logo.png; path = ../../../Terra_logo.png; sourceTree = "<group>"; };
+		C0F79C0D2313869A0047D4ED /* climatechangelesson@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "climatechangelesson@3x.png"; path = "../../TerraXD/climatechangelesson@3x.png"; sourceTree = "<group>"; };
+		C0FA8268240D1D6E001DBBE2 /* FF4D00-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FF4D00-0.png"; path = "../../../../Downloads/FF4D00-0.png"; sourceTree = "<group>"; };
+		C0FA826A240D1D94001DBBE2 /* Rectangle 678.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 678.png"; path = "../../../../Downloads/Rectangle 678.png"; sourceTree = "<group>"; };
+		C0FA826C240D1DC1001DBBE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E012DB0B9D2122A007589DE2 /* Pods_Terra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Terra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0C8516622FA81F800141CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E04650F1F1B81AA045DA2E /* Pods_Terra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C8517C22FA81FA00141CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A0B4A6D610FB0C063C2D3C /* Pods_TerraTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C8518722FA81FA00141CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE8CFF388CBF74A22206F81 /* Pods_TerraUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54E77257AD57BA352EC5444C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF993E7DA45C6FAB79BD90F9 /* Pods-Terra.debug.xcconfig */,
+				21DBEEEF3B7C8318CD0D11E4 /* Pods-Terra.release.xcconfig */,
+				AB366FBE1ECF83F606C1E83E /* Pods-TerraTests.debug.xcconfig */,
+				B4885033A9FD15C68288F659 /* Pods-TerraTests.release.xcconfig */,
+				429F66736715AF922270A8CC /* Pods-TerraUITests.debug.xcconfig */,
+				2482DC1E72EAB70E63369602 /* Pods-TerraUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6781E535E32F39AEA417F7DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E012DB0B9D2122A007589DE2 /* Pods_Terra.framework */,
+				5222F401608EE2D917A4DBB0 /* Pods_TerraTests.framework */,
+				61CBBD4D076E01AEC53AC715 /* Pods_TerraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C00C5234231F618A00EE9426 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C0C8517222FA81F800141CAA /* Main.storyboard */,
+				C0C8517722FA81FA00141CAA /* LaunchScreen.storyboard */,
+				C00C5230231F606900EE9426 /* mapreading.storyboard */,
+				C00C5251231F6E6C00EE9426 /* bukittimah.storyboard */,
+				C05FCF6E23229F3500D82602 /* trf.storyboard */,
+				C05FCF802322A7E800D82602 /* climatechange.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C0C8516022FA81F800141CAA = {
+			isa = PBXGroup;
+			children = (
+				C00C5234231F618A00EE9426 /* Storyboards */,
+				C0C851C622FA87CB00141CAA /* Images */,
+				C0C851C122FA877500141CAA /* Fonts */,
+				C0C851A022FA861900141CAA /* CP Indicators */,
+				C0C8516B22FA81F800141CAA /* Terra */,
+				C0C8518222FA81FA00141CAA /* TerraTests */,
+				C0C8518D22FA81FA00141CAA /* TerraUITests */,
+				C0C8516A22FA81F800141CAA /* Products */,
+				54E77257AD57BA352EC5444C /* Pods */,
+				6781E535E32F39AEA417F7DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0C8516A22FA81F800141CAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0C8516922FA81F800141CAA /* Terra.app */,
+				C0C8517F22FA81FA00141CAA /* TerraTests.xctest */,
+				C0C8518A22FA81FA00141CAA /* TerraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0C8516B22FA81F800141CAA /* Terra */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA826C240D1DC1001DBBE2 /* GoogleService-Info.plist */,
+				C0C8516C22FA81F800141CAA /* AppDelegate.swift */,
+				C0C8516E22FA81F800141CAA /* Lessons.swift */,
+				C0C8517022FA81F800141CAA /* OEE_code.swift */,
+				C0C8517522FA81FA00141CAA /* Assets.xcassets */,
+				C0C8517A22FA81FA00141CAA /* Info.plist */,
+				C05B609A22FAB578005C9530 /* checkpointlist.swift */,
+				C05B60A023000F08005C9530 /* TabBarController.swift */,
+				C0BC3AC72303AD3D00739D6E /* History.swift */,
+				C0BC3AC92303AD4800739D6E /* Geography.swift */,
+				C0BC3ACB2303AD5300739D6E /* Climate Change.swift */,
+				C0BC3AD72303B1D900739D6E /* cpinfo.swift */,
+				C0BC3AD92303B59A00739D6E /* map.swift */,
+				C0A00E3723050DBE00D6CB69 /* NC.swift */,
+				C05B2DBA230911EF004C0F19 /* cphelp.swift */,
+				C0BDD93C230A6C8F00875F34 /* credits.swift */,
+				C0BDD942230A963600875F34 /* mapreading.swift */,
+				C0BDD944230BB85B00875F34 /* rainforest.swift */,
+				C00DD93B2314F351004C2195 /* welcomescreen.swift */,
+				C00DD93D2314F372004C2195 /* terralessons.swift */,
+				C00DD9452314F758004C2195 /* File.swift */,
+				C00C5232231F614300EE9426 /* maplessons.swift */,
+				C00C5255231F6FFB00EE9426 /* bthill.swift */,
+				C05FCF6823229A2500D82602 /* bthillslides.swift */,
+				C05FCF8A2322A8D200D82602 /* cclesson.swift */,
+			);
+			path = Terra;
+			sourceTree = "<group>";
+		};
+		C0C8518222FA81FA00141CAA /* TerraTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0C8518322FA81FA00141CAA /* TerraTests.swift */,
+				C0C8518522FA81FA00141CAA /* Info.plist */,
+			);
+			path = TerraTests;
+			sourceTree = "<group>";
+		};
+		C0C8518D22FA81FA00141CAA /* TerraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0C8518E22FA81FA00141CAA /* TerraUITests.swift */,
+				C0C8519022FA81FA00141CAA /* Info.plist */,
+			);
+			path = TerraUITests;
+			sourceTree = "<group>";
+		};
+		C0C851A022FA861900141CAA /* CP Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				C0A00E7423053E8F00D6CB69 /* CP3_reached@3x.png */,
+				C0A00E7223053E8400D6CB69 /* CP3_not@3x.png */,
+				C0A00E7023053E7A00D6CB69 /* CP2_reached@3x.png */,
+				C0A00E6E23053E6C00D6CB69 /* CP2_not@3x.png */,
+				C0A00E6C23053E2500D6CB69 /* CP4_not@3x.png */,
+				C0A00E6A23053E1B00D6CB69 /* CP4_reached@3x.png */,
+				C0A00E6823053E0F00D6CB69 /* CP1_reached@3x.png */,
+				C0A00E6623053E0100D6CB69 /* CP1_not@3x.png */,
+			);
+			path = "CP Indicators";
+			sourceTree = "<group>";
+		};
+		C0C851C122FA877500141CAA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C0A00E3B2305101E00D6CB69 /* Poppins-Bold.ttf */,
+				C0A00E392305101D00D6CB69 /* Poppins-Light.ttf */,
+				C0A00E3A2305101D00D6CB69 /* Poppins-Medium.otf */,
+				C0A00E3C2305101E00D6CB69 /* Poppins-Regular.ttf */,
+				C0A00E3D2305101E00D6CB69 /* Poppins-SemiBold.otf */,
+				C0C851C222FA878100141CAA /* Kaleko 105 Round W01 Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C0C851C622FA87CB00141CAA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA826A240D1D94001DBBE2 /* Rectangle 678.png */,
+				C0FA8268240D1D6E001DBBE2 /* FF4D00-0.png */,
+				C0737B832322CDF5008EE4F3 /* Screenshot 2019-09-07 at 1.24.44 AM.png */,
+				C05FCFA22322BC7000D82602 /* CP9_reached@3x.png */,
+				C05FCFA02322BC6800D82602 /* CP9_not@3x.png */,
+				C05FCF9E2322BC5A00D82602 /* CP8_reache@3x.png */,
+				C05FCF9C2322BC4E00D82602 /* CP8_not@3x.png */,
+				C05FCF9A2322BC4300D82602 /* CP7_reached@3x.png */,
+				C05FCF982322BC3B00D82602 /* CP7_not@3x.png */,
+				C05FCF962322BC3200D82602 /* CP6_reached@3x.png */,
+				C05FCF942322BC2500D82602 /* CP6_not@3x.png */,
+				C05FCF922322BC1500D82602 /* CP5_reached@3x.png */,
+				C05FCF902322BC0B00D82602 /* CP5_not@3x.png */,
+				C05FCF8E2322BA4C00D82602 /* creditspage@3x.png */,
+				C05FCF8C2322AC5F00D82602 /* trail-1.png */,
+				C05FCF882322A8B000D82602 /* greenhouselesson@3x.png */,
+				C05FCF862322A8A500D82602 /* globalwarminglesson@3x.png */,
+				C05FCF842322A89B00D82602 /* global_warming@3x.png */,
+				C05FCF822322A89100D82602 /* climate_change@3x.png */,
+				C05FCF7C2322A57E00D82602 /* undergrowthlesson@3x.png */,
+				C05FCF7A2322A57100D82602 /* emergentlesson@3x.png */,
+				C05FCF782322A56800D82602 /* canopylesson@3x.png */,
+				C05FCF762322A29E00D82602 /* undergrowth_layer@3x.png */,
+				C05FCF742322A29600D82602 /* emergent_layer@3x.png */,
+				C05FCF722322A28D00D82602 /* canopy_layer@3x.png */,
+				C05FCF6C23229F2E00D82602 /* trf_characteristics@3x.png */,
+				C05FCF6A23229D1000D82602 /* bthill5@3x.png */,
+				C05FCF662322965200D82602 /* bthillbattle2@3x.png */,
+				C05FCF642322944C00D82602 /* bthillbattle@3x.png */,
+				C05FCF622322944300D82602 /* bthill4@3x.png */,
+				C05FCF602322943800D82602 /* bthill3@3x.png */,
+				C05FCF5E2322942D00D82602 /* bthill2@3x.png */,
+				C05FCF5C2322942400D82602 /* battle_overview@3x.png */,
+				C0C77378231F9BC600B3D4CB /* settlements_lessons@3x.png */,
+				C00C524B231F6B3C00EE9426 /* compass_lessons@3x.png */,
+				C00C524D231F6BEC00EE9426 /* contour_lines_lessons@3x.png */,
+				C00C5249231F6A7B00EE9426 /* bearing_lessons@3x.png */,
+				C00C5247231F69D700EE9426 /* scale_and_distances_lessons@3x.png */,
+				C00C5245231F68FE00EE9426 /* titles_and_symbols_lessons@3x.png */,
+				C00C5243231F677D00EE9426 /* grid_references_lessons@3x.png */,
+				C00C5241231F632D00EE9426 /* titles_and_symbols@3x.png */,
+				C00C523F231F631D00EE9426 /* settlements@3x.png */,
+				C00C523D231F631200EE9426 /* scale_and_distances@3x.png */,
+				C00C523B231F630900EE9426 /* gridreferences@3x.png */,
+				C00C5239231F630200EE9426 /* contour_lines@3x.png */,
+				C00C5237231F62F900EE9426 /* compass@3x.png */,
+				C00C5235231F62F100EE9426 /* bearing@3x.png */,
+				C00DD94723160469004C2195 /* Group 1628@3x.png */,
+				C00DD9412314F6A2004C2195 /* aboutbutton@3x.png */,
+				C00DD93F2314F469004C2195 /* gradientstarted@3x.png */,
+				C00DD9392314F25B004C2195 /* whitestarted@3x.png */,
+				C00DD9372314F041004C2195 /* whitenext@3x.png */,
+				C00DD9352314F02D004C2195 /* gradientnext@3x.png */,
+				C00DD9332314EFCF004C2195 /* terrawelcome@3x.png */,
+				C00DD9312314EFC7004C2195 /* terraprogress@3x.png */,
+				C00DD92F2314EFBF004C2195 /* terralessons@3x.png */,
+				C0F79C0D2313869A0047D4ED /* climatechangelesson@3x.png */,
+				C0BDD946230E4A4A00875F34 /* bkthillbutton@3x.png */,
+				C0BDD940230A947A00875F34 /* rainforest@3x.png */,
+				C0BDD93E230A918700875F34 /* mapreading@3x.png */,
+				C0BDD93A230A6C1100875F34 /* creditsheader@3x.png */,
+				C0A00E7A23090D8600D6CB69 /* resetbutton@3x.png */,
+				C0A00E7823090C5F00D6CB69 /* infobutton@3x.png */,
+				C0A00E51230520B200D6CB69 /* checkpointheader@3x.png */,
+				C0A00E4923051E8A00D6CB69 /* oeeheader@3x.png */,
+				C0A00E4723051DA200D6CB69 /* mapheader@3x.png */,
+				C075771C230505D500C133E2 /* customtabbar@3x.png */,
+				C07577182305054C00C133E2 /* climatechangebutton@3x.png */,
+				C07577162305054C00C133E2 /* geographybutton@3x.png */,
+				C07577172305054C00C133E2 /* historybutton@3x.png */,
+				C0BC3AED2304FE8900739D6E /* TErraiCoN.001.png */,
+				C0BC3AEB2303EB5400739D6E /* startpage.png */,
+				C0BC3AE72303E9EB00739D6E /* credits@3x.png */,
+				C0BC3AE82303E9EB00739D6E /* getstarted@3x.png */,
+				C0BC3ADB2303B65B00739D6E /* map.png */,
+				C0C851C722FA87D400141CAA /* Terra_logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0C8516822FA81F800141CAA /* Terra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C8519322FA81FA00141CAA /* Build configuration list for PBXNativeTarget "Terra" */;
+			buildPhases = (
+				200639AFCE30C2038C882A16 /* [CP] Check Pods Manifest.lock */,
+				C0C8516522FA81F800141CAA /* Sources */,
+				C0C8516622FA81F800141CAA /* Frameworks */,
+				C0C8516722FA81F800141CAA /* Resources */,
+				D7249E8F52176B9D2EEA4814 /* [CP] Embed Pods Frameworks */,
+				54D2A6E3A7C42305261C9C55 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Terra;
+			productName = Terra;
+			productReference = C0C8516922FA81F800141CAA /* Terra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0C8517E22FA81FA00141CAA /* TerraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C8519622FA81FA00141CAA /* Build configuration list for PBXNativeTarget "TerraTests" */;
+			buildPhases = (
+				48DB316BEDD44504421348DD /* [CP] Check Pods Manifest.lock */,
+				C0C8517B22FA81FA00141CAA /* Sources */,
+				C0C8517C22FA81FA00141CAA /* Frameworks */,
+				C0C8517D22FA81FA00141CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0C8518122FA81FA00141CAA /* PBXTargetDependency */,
+			);
+			name = TerraTests;
+			productName = TerraTests;
+			productReference = C0C8517F22FA81FA00141CAA /* TerraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0C8518922FA81FA00141CAA /* TerraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C8519922FA81FA00141CAA /* Build configuration list for PBXNativeTarget "TerraUITests" */;
+			buildPhases = (
+				43B2395C63C24750FA48188E /* [CP] Check Pods Manifest.lock */,
+				C0C8518622FA81FA00141CAA /* Sources */,
+				C0C8518722FA81FA00141CAA /* Frameworks */,
+				C0C8518822FA81FA00141CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0C8518C22FA81FA00141CAA /* PBXTargetDependency */,
+			);
+			name = TerraUITests;
+			productName = TerraUITests;
+			productReference = C0C8518A22FA81FA00141CAA /* TerraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0C8516122FA81F800141CAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Karl Steven";
+				TargetAttributes = {
+					C0C8516822FA81F800141CAA = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					C0C8517E22FA81FA00141CAA = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = C0C8516822FA81F800141CAA;
+					};
+					C0C8518922FA81FA00141CAA = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = C0C8516822FA81F800141CAA;
+					};
+				};
+			};
+			buildConfigurationList = C0C8516422FA81F800141CAA /* Build configuration list for PBXProject "Terra" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0C8516022FA81F800141CAA;
+			productRefGroup = C0C8516A22FA81F800141CAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0C8516822FA81F800141CAA /* Terra */,
+				C0C8517E22FA81FA00141CAA /* TerraTests */,
+				C0C8518922FA81FA00141CAA /* TerraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0C8516722FA81F800141CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A00E6D23053E2500D6CB69 /* CP4_not@3x.png in Resources */,
+				C0BDD93B230A6C1100875F34 /* creditsheader@3x.png in Resources */,
+				C05FCF872322A8A600D82602 /* globalwarminglesson@3x.png in Resources */,
+				C00C524A231F6A7B00EE9426 /* bearing_lessons@3x.png in Resources */,
+				C00DD9362314F02D004C2195 /* gradientnext@3x.png in Resources */,
+				C0A00E6723053E0100D6CB69 /* CP1_not@3x.png in Resources */,
+				C0A00E7323053E8400D6CB69 /* CP3_not@3x.png in Resources */,
+				C05FCF952322BC2500D82602 /* CP6_not@3x.png in Resources */,
+				C05FCFA12322BC6800D82602 /* CP9_not@3x.png in Resources */,
+				C0A00E6923053E0F00D6CB69 /* CP1_reached@3x.png in Resources */,
+				C05FCF8F2322BA4C00D82602 /* creditspage@3x.png in Resources */,
+				C05FCF6B23229D1100D82602 /* bthill5@3x.png in Resources */,
+				C00DD9402314F469004C2195 /* gradientstarted@3x.png in Resources */,
+				C05FCF752322A29600D82602 /* emergent_layer@3x.png in Resources */,
+				C05FCF6D23229F2E00D82602 /* trf_characteristics@3x.png in Resources */,
+				C0A00E7523053E8F00D6CB69 /* CP3_reached@3x.png in Resources */,
+				C0C851C822FA87D400141CAA /* Terra_logo.png in Resources */,
+				C0F79C0E2313869B0047D4ED /* climatechangelesson@3x.png in Resources */,
+				C0C8517922FA81FA00141CAA /* LaunchScreen.storyboard in Resources */,
+				C05FCF852322A89B00D82602 /* global_warming@3x.png in Resources */,
+				C0A00E3F2305101E00D6CB69 /* Poppins-Medium.otf in Resources */,
+				C05FCF5D2322942400D82602 /* battle_overview@3x.png in Resources */,
+				C05FCF6F23229F3500D82602 /* trf.storyboard in Resources */,
+				C00DD93A2314F25B004C2195 /* whitestarted@3x.png in Resources */,
+				C00C5242231F632E00EE9426 /* titles_and_symbols@3x.png in Resources */,
+				C0C77379231F9BC600B3D4CB /* settlements_lessons@3x.png in Resources */,
+				C0A00E7B23090D8700D6CB69 /* resetbutton@3x.png in Resources */,
+				C00C524C231F6B3C00EE9426 /* compass_lessons@3x.png in Resources */,
+				C0C8517622FA81FA00141CAA /* Assets.xcassets in Resources */,
+				C05FCF912322BC0B00D82602 /* CP5_not@3x.png in Resources */,
+				C0BC3AE92303E9EB00739D6E /* credits@3x.png in Resources */,
+				C0A00E7123053E7A00D6CB69 /* CP2_reached@3x.png in Resources */,
+				C05FCF9F2322BC5A00D82602 /* CP8_reache@3x.png in Resources */,
+				C0737B842322CDF5008EE4F3 /* Screenshot 2019-09-07 at 1.24.44 AM.png in Resources */,
+				C0A00E3E2305101E00D6CB69 /* Poppins-Light.ttf in Resources */,
+				C0BC3ADC2303B65B00739D6E /* map.png in Resources */,
+				C05FCF792322A56800D82602 /* canopylesson@3x.png in Resources */,
+				C075771D230505D500C133E2 /* customtabbar@3x.png in Resources */,
+				C0BDD947230E4A4A00875F34 /* bkthillbutton@3x.png in Resources */,
+				C00DD9422314F6A2004C2195 /* aboutbutton@3x.png in Resources */,
+				C00C523E231F631200EE9426 /* scale_and_distances@3x.png in Resources */,
+				C0A00E402305101E00D6CB69 /* Poppins-Bold.ttf in Resources */,
+				C0BC3AEA2303E9EB00739D6E /* getstarted@3x.png in Resources */,
+				C0C8517422FA81F800141CAA /* Main.storyboard in Resources */,
+				C05FCF892322A8B100D82602 /* greenhouselesson@3x.png in Resources */,
+				C00C5248231F69D800EE9426 /* scale_and_distances_lessons@3x.png in Resources */,
+				C0BDD93F230A918700875F34 /* mapreading@3x.png in Resources */,
+				C05FCF772322A29E00D82602 /* undergrowth_layer@3x.png in Resources */,
+				C00C5240231F631D00EE9426 /* settlements@3x.png in Resources */,
+				C0BDD941230A947A00875F34 /* rainforest@3x.png in Resources */,
+				C0A00E4A23051E8A00D6CB69 /* oeeheader@3x.png in Resources */,
+				C00DD94823160469004C2195 /* Group 1628@3x.png in Resources */,
+				C0C851C322FA878400141CAA /* Kaleko 105 Round W01 Bold.ttf in Resources */,
+				C05FCF632322944300D82602 /* bthill4@3x.png in Resources */,
+				C05FCF5F2322942D00D82602 /* bthill2@3x.png in Resources */,
+				C0A00E4823051DA300D6CB69 /* mapheader@3x.png in Resources */,
+				C05FCF652322944D00D82602 /* bthillbattle@3x.png in Resources */,
+				C05FCF7B2322A57100D82602 /* emergentlesson@3x.png in Resources */,
+				C0A00E6B23053E1B00D6CB69 /* CP4_reached@3x.png in Resources */,
+				C05FCF612322943900D82602 /* bthill3@3x.png in Resources */,
+				C05FCF812322A7E800D82602 /* climatechange.storyboard in Resources */,
+				C05FCF9D2322BC4E00D82602 /* CP8_not@3x.png in Resources */,
+				C0BC3AEE2304FE8900739D6E /* TErraiCoN.001.png in Resources */,
+				C00DD9342314EFCF004C2195 /* terrawelcome@3x.png in Resources */,
+				C05FCF932322BC1500D82602 /* CP5_reached@3x.png in Resources */,
+				C00C5244231F677D00EE9426 /* grid_references_lessons@3x.png in Resources */,
+				C0A00E52230520B200D6CB69 /* checkpointheader@3x.png in Resources */,
+				C05FCF672322965200D82602 /* bthillbattle2@3x.png in Resources */,
+				C05FCFA32322BC7000D82602 /* CP9_reached@3x.png in Resources */,
+				C0A00E7923090C6000D6CB69 /* infobutton@3x.png in Resources */,
+				C05FCF992322BC3B00D82602 /* CP7_not@3x.png in Resources */,
+				C00C524E231F6BEC00EE9426 /* contour_lines_lessons@3x.png in Resources */,
+				C00DD9382314F042004C2195 /* whitenext@3x.png in Resources */,
+				C00C523A231F630200EE9426 /* contour_lines@3x.png in Resources */,
+				C075771A2305054C00C133E2 /* historybutton@3x.png in Resources */,
+				C05FCF8D2322AC5F00D82602 /* trail-1.png in Resources */,
+				C05FCF732322A28D00D82602 /* canopy_layer@3x.png in Resources */,
+				C00C5238231F62F900EE9426 /* compass@3x.png in Resources */,
+				C0FA8269240D1D6E001DBBE2 /* FF4D00-0.png in Resources */,
+				C00DD9302314EFBF004C2195 /* terralessons@3x.png in Resources */,
+				C0A00E6F23053E6C00D6CB69 /* CP2_not@3x.png in Resources */,
+				C05FCF7D2322A57E00D82602 /* undergrowthlesson@3x.png in Resources */,
+				C00C5252231F6E6C00EE9426 /* bukittimah.storyboard in Resources */,
+				C05FCF972322BC3200D82602 /* CP6_reached@3x.png in Resources */,
+				C00C5246231F68FF00EE9426 /* titles_and_symbols_lessons@3x.png in Resources */,
+				C0A00E422305101E00D6CB69 /* Poppins-SemiBold.otf in Resources */,
+				C00DD9322314EFC7004C2195 /* terraprogress@3x.png in Resources */,
+				C00C5231231F606900EE9426 /* mapreading.storyboard in Resources */,
+				C05FCF832322A89100D82602 /* climate_change@3x.png in Resources */,
+				C0A00E412305101E00D6CB69 /* Poppins-Regular.ttf in Resources */,
+				C00C523C231F630900EE9426 /* gridreferences@3x.png in Resources */,
+				C07577192305054C00C133E2 /* geographybutton@3x.png in Resources */,
+				C075771B2305054C00C133E2 /* climatechangebutton@3x.png in Resources */,
+				C0FA826B240D1D94001DBBE2 /* Rectangle 678.png in Resources */,
+				C05FCF9B2322BC4300D82602 /* CP7_reached@3x.png in Resources */,
+				C00C5236231F62F100EE9426 /* bearing@3x.png in Resources */,
+				C0BC3AEC2303EB5500739D6E /* startpage.png in Resources */,
+				C0FA826D240D1DC1001DBBE2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C8517D22FA81FA00141CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A00E7C23090DA200D6CB69 /* resetbutton@3x.png in Resources */,
+				C0A00E432305104B00D6CB69 /* Poppins-SemiBold.otf in Resources */,
+				C0C851C922FA87D400141CAA /* Terra_logo.png in Resources */,
+				C0C851C422FA878400141CAA /* Kaleko 105 Round W01 Bold.ttf in Resources */,
+				C0A00E4B23051EB100D6CB69 /* oeeheader@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C8518822FA81FA00141CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A00E7D23090DA200D6CB69 /* resetbutton@3x.png in Resources */,
+				C0A00E442305104B00D6CB69 /* Poppins-SemiBold.otf in Resources */,
+				C0C851CA22FA87D400141CAA /* Terra_logo.png in Resources */,
+				C0C851C522FA878500141CAA /* Kaleko 105 Round W01 Bold.ttf in Resources */,
+				C0A00E4D23051EB300D6CB69 /* oeeheader@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		200639AFCE30C2038C882A16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Terra-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43B2395C63C24750FA48188E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TerraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48DB316BEDD44504421348DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TerraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54D2A6E3A7C42305261C9C55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Terra/Pods-Terra-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Terra/Pods-Terra-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Terra/Pods-Terra-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7249E8F52176B9D2EEA4814 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Terra/Pods-Terra-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Terra/Pods-Terra-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Terra/Pods-Terra-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0C8516522FA81F800141CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BC3ACA2303AD4800739D6E /* Geography.swift in Sources */,
+				C05B2DBB230911EF004C0F19 /* cphelp.swift in Sources */,
+				C00C5233231F614300EE9426 /* maplessons.swift in Sources */,
+				C0BDD945230BB85B00875F34 /* rainforest.swift in Sources */,
+				C0C8517122FA81F800141CAA /* OEE_code.swift in Sources */,
+				C05FCF6923229A2500D82602 /* bthillslides.swift in Sources */,
+				C0BC3AD82303B1D900739D6E /* cpinfo.swift in Sources */,
+				C0C8516D22FA81F800141CAA /* AppDelegate.swift in Sources */,
+				C0BC3AC82303AD3D00739D6E /* History.swift in Sources */,
+				C00DD9462314F758004C2195 /* File.swift in Sources */,
+				C0BDD93D230A6C8F00875F34 /* credits.swift in Sources */,
+				C0BC3ADA2303B59A00739D6E /* map.swift in Sources */,
+				C0BC3ACC2303AD5300739D6E /* Climate Change.swift in Sources */,
+				C05FCF8B2322A8D200D82602 /* cclesson.swift in Sources */,
+				C00DD93C2314F351004C2195 /* welcomescreen.swift in Sources */,
+				C05B609B22FAB578005C9530 /* checkpointlist.swift in Sources */,
+				C0A00E3823050DBE00D6CB69 /* NC.swift in Sources */,
+				C00DD93E2314F372004C2195 /* terralessons.swift in Sources */,
+				C05B60A123000F08005C9530 /* TabBarController.swift in Sources */,
+				C0BDD943230A963600875F34 /* mapreading.swift in Sources */,
+				C00C5256231F6FFB00EE9426 /* bthill.swift in Sources */,
+				C0C8516F22FA81F800141CAA /* Lessons.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C8517B22FA81FA00141CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BC3AD02303AF5F00739D6E /* Geography.swift in Sources */,
+				C0C851CF22FAA8A300141CAA /* OEE_code.swift in Sources */,
+				C0A00E642305363500D6CB69 /* checkpointlist.swift in Sources */,
+				C0A00E5023051F3000D6CB69 /* NC.swift in Sources */,
+				C0A00E762309084600D6CB69 /* cpinfo.swift in Sources */,
+				C0BC3ACD2303AF5A00739D6E /* History.swift in Sources */,
+				C0BC3AD12303AF6200739D6E /* Climate Change.swift in Sources */,
+				C0C8518422FA81FA00141CAA /* TerraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C8518622FA81FA00141CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BC3AD22303AF6200739D6E /* Climate Change.swift in Sources */,
+				C0A00E652305363600D6CB69 /* checkpointlist.swift in Sources */,
+				C0BC3ACF2303AF5E00739D6E /* Geography.swift in Sources */,
+				C0A00E4E23051F2F00D6CB69 /* NC.swift in Sources */,
+				C0C851D022FAA8A300141CAA /* OEE_code.swift in Sources */,
+				C0A00E772309084600D6CB69 /* cpinfo.swift in Sources */,
+				C0C8518F22FA81FA00141CAA /* TerraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0C8518122FA81FA00141CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0C8516822FA81F800141CAA /* Terra */;
+			targetProxy = C0C8518022FA81FA00141CAA /* PBXContainerItemProxy */;
+		};
+		C0C8518C22FA81FA00141CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0C8516822FA81F800141CAA /* Terra */;
+			targetProxy = C0C8518B22FA81FA00141CAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0C8517222FA81F800141CAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0C8517322FA81F800141CAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0C8517722FA81FA00141CAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0C8517822FA81FA00141CAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0C8519122FA81FA00141CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: karl.steven.sst@icloud.com (K84QAH8VCV)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M8D7AG3826;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0C8519222FA81FA00141CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: karl.steven.sst@icloud.com (K84QAH8VCV)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M8D7AG3826;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0C8519422FA81FA00141CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF993E7DA45C6FAB79BD90F9 /* Pods-Terra.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8D7AG3826;
+				INFOPLIST_FILE = Terra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SST.Terra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C0C8519522FA81FA00141CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DBEEEF3B7C8318CD0D11E4 /* Pods-Terra.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_STYLE[sdk=*]" = Automatic;
+				DEVELOPMENT_TEAM = M8D7AG3826;
+				INFOPLIST_FILE = Terra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SST.Terra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C0C8519722FA81FA00141CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB366FBE1ECF83F606C1E83E /* Pods-TerraTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TerraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SST.TerraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Terra.app/Terra";
+			};
+			name = Debug;
+		};
+		C0C8519822FA81FA00141CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4885033A9FD15C68288F659 /* Pods-TerraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TerraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SST.TerraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Terra.app/Terra";
+			};
+			name = Release;
+		};
+		C0C8519A22FA81FA00141CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429F66736715AF922270A8CC /* Pods-TerraUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8D7AG3826;
+				INFOPLIST_FILE = TerraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SST.TerraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Terra;
+			};
+			name = Debug;
+		};
+		C0C8519B22FA81FA00141CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2482DC1E72EAB70E63369602 /* Pods-TerraUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8D7AG3826;
+				INFOPLIST_FILE = TerraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SST.TerraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Terra;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0C8516422FA81F800141CAA /* Build configuration list for PBXProject "Terra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C8519122FA81FA00141CAA /* Debug */,
+				C0C8519222FA81FA00141CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C8519322FA81FA00141CAA /* Build configuration list for PBXNativeTarget "Terra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C8519422FA81FA00141CAA /* Debug */,
+				C0C8519522FA81FA00141CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C8519622FA81FA00141CAA /* Build configuration list for PBXNativeTarget "TerraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C8519722FA81FA00141CAA /* Debug */,
+				C0C8519822FA81FA00141CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C8519922FA81FA00141CAA /* Build configuration list for PBXNativeTarget "TerraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C8519A22FA81FA00141CAA /* Debug */,
+				C0C8519B22FA81FA00141CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0C8516122FA81F800141CAA /* Project object */;
+}

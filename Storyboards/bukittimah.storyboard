@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bthill-->
+        <scene sceneID="XQ9-V4-mYN">
+            <objects>
+                <viewController storyboardIdentifier="bukittimah_main" id="dom-WE-9t4" customClass="bthill" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X2n-e6-JET">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colourBar" translatesAutoresizingMaskIntoConstraints="NO" id="cNM-Cb-k1s">
+                                <rect key="frame" x="0.0" y="88" width="414" height="5"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kuf-aX-Wod">
+                                <rect key="frame" x="0.0" y="93" width="414" height="1707"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gR-2e-RcX">
+                                        <rect key="frame" x="27" y="8" width="360" height="209"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bthillbattle.png"/>
+                                        <connections>
+                                            <segue destination="Gaf-gY-iE0" kind="show" id="ut4-5h-wy7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77z-ff-Upm">
+                                        <rect key="frame" x="27" y="225" width="360" height="209"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bthillbattle2.png"/>
+                                        <connections>
+                                            <segue destination="HhW-zW-U0j" kind="show" id="rmR-qt-9gL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cNM-Cb-k1s" secondAttribute="trailing" id="6Qt-MR-Alv"/>
+                            <constraint firstItem="Kuf-aX-Wod" firstAttribute="top" secondItem="cNM-Cb-k1s" secondAttribute="bottom" id="8g8-db-DD8"/>
+                            <constraint firstItem="cNM-Cb-k1s" firstAttribute="leading" secondItem="X2n-e6-JET" secondAttribute="leading" id="OPu-pf-4tY"/>
+                            <constraint firstAttribute="bottom" secondItem="Kuf-aX-Wod" secondAttribute="bottom" id="P5h-zZ-Vgy"/>
+                            <constraint firstItem="cNM-Cb-k1s" firstAttribute="top" secondItem="X2n-e6-JET" secondAttribute="top" constant="88" id="orb-Hn-iGs"/>
+                            <constraint firstItem="Kuf-aX-Wod" firstAttribute="trailing" secondItem="S8B-i1-T2t" secondAttribute="trailing" id="vrG-md-ddk"/>
+                            <constraint firstItem="Kuf-aX-Wod" firstAttribute="leading" secondItem="S8B-i1-T2t" secondAttribute="leading" id="wSg-sz-6qM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S8B-i1-T2t"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Vn-ze-aNe"/>
+                    <size key="freeformSize" width="414" height="1800"/>
+                    <connections>
+                        <outlet property="scrollview" destination="Kuf-aX-Wod" id="ed8-lE-ymz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6y3-HN-ujb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630.43478260869574" y="-132.58928571428572"/>
+        </scene>
+        <!--Bthillslides-->
+        <scene sceneID="S1c-07-Gs4">
+            <objects>
+                <viewController id="HhW-zW-U0j" customClass="bthillslides" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yjg-hC-UKV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwY-nm-us5">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Back" id="UUK-dC-rrW">
+                                        <connections>
+                                            <action selector="prevPic:" destination="HhW-zW-U0j" id="heR-ek-zmG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eav-rw-FNk"/>
+                                    <barButtonItem title="Next" id="PUJ-lB-enE">
+                                        <connections>
+                                            <action selector="nextPic:" destination="HhW-zW-U0j" id="PdP-tS-puh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Bnt-ll-yvQ">
+                                <rect key="frame" x="188" y="825" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.56469706779999995" blue="0.96294019669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="chngPic:" destination="HhW-zW-U0j" eventType="valueChanged" id="8cn-vV-Jxy"/>
+                                </connections>
+                            </pageControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colourBar" translatesAutoresizingMaskIntoConstraints="NO" id="a6C-hd-zWE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bthill2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HSI-EO-qQ9">
+                                <rect key="frame" x="-15" y="95" width="445" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qDA-dC-yfo"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="HSI-EO-qQ9" id="jZj-0q-Ceh"/>
+                        <outlet property="pageControl" destination="Bnt-ll-yvQ" id="Zl2-fj-egt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Xh-Mv-h4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405.7971014492755" y="223.66071428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L6z-uG-99c">
+            <objects>
+                <viewController id="Gaf-gY-iE0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pyD-VL-SH8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colourBar" translatesAutoresizingMaskIntoConstraints="NO" id="k7Z-s7-ddy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="battle_overview.png" translatesAutoresizingMaskIntoConstraints="NO" id="39o-Nx-YVJ">
+                                <rect key="frame" x="10" y="42" width="394" height="854"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jQg-Gi-HVu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbN-K7-KdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405.7971014492755" y="-435.26785714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="battle_overview.png" width="374" height="714"/>
+        <image name="bthill2.png" width="375" height="746"/>
+        <image name="bthillbattle.png" width="276.66665649414062" height="158"/>
+        <image name="bthillbattle2.png" width="272" height="158"/>
+        <image name="colourBar" width="375" height="5"/>
+    </resources>
+</document>

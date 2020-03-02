@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ikC-qu-Gtr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.otf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--OEE-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="8rJ-Kc-sve" customClass="OEE_code" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter code here" textAlignment="center" minimumFontSize="17" background="gradientTextfield" translatesAutoresizingMaskIntoConstraints="NO" id="DD7-9S-WMD">
+                                <rect key="frame" x="18" y="206" width="379" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="31"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="send"/>
+                                <connections>
+                                    <action selector="code_collect:" destination="8rJ-Kc-sve" eventType="editingDidEndOnExit" id="6CR-sd-KWQ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFa-Hx-KQV">
+                                <rect key="frame" x="20" y="360" width="378" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="28"/>
+                                <state key="normal" title="Submit code" backgroundImage="gradientButton"/>
+                                <connections>
+                                    <action selector="code_check:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="mhk-nD-95n"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No code entered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bo6-yS-CGw">
+                                <rect key="frame" x="88" y="291" width="237" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oeeheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="VZj-Ld-bHS">
+                                <rect key="frame" x="0.0" y="-34" width="414" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="customtabbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="biT-wI-lxA">
+                                <rect key="frame" x="-95" y="681" width="605" height="420"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to use:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf5-09-eEe">
+                                <rect key="frame" x="157" y="475" width="101" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeB-WM-JB3">
+                                <rect key="frame" x="33" y="511" width="352" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Enter the numerical code pasted on the checkpoint location and the checkpoint will be marked as "reached" in the Checkpoint List page.</string>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="OEE" image="OEE" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="code_collect" destination="DD7-9S-WMD" id="ngY-WY-ger"/>
+                        <outlet property="code_entered" destination="Bo6-yS-CGw" id="ryD-TJ-Naw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559" y="360"/>
+        </scene>
+        <!--Lessons-->
+        <scene sceneID="pyF-DC-eUb">
+            <objects>
+                <viewController definesPresentationContext="YES" modalPresentationStyle="fullScreen" id="Tbc-EB-n2a" customClass="Lessons" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V2B-gG-g2U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1628.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Ni-Fz-j4d">
+                                <rect key="frame" x="0.0" y="-141" width="414" height="616"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Ni-Fz-j4d" secondAttribute="height" multiplier="207:308" id="uj3-9k-9oI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="customtabbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="1UN-bM-l9R">
+                                <rect key="frame" x="-95" y="681" width="605" height="420"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r15-4Q-EAl">
+                                <rect key="frame" x="13" y="451" width="389" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="historybutton.png"/>
+                                <connections>
+                                    <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="PS0-sl-upL"/>
+                                    <segue destination="Ozp-Sf-0qQ" kind="show" id="Qm6-aO-7f7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGN-wW-IEe">
+                                <rect key="frame" x="13" y="635" width="389" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="climatechangebutton.png"/>
+                                <connections>
+                                    <action selector="climatechange:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="f0B-RV-hNB"/>
+                                    <segue destination="VaQ-cb-h5n" kind="show" id="cRA-Dk-7uZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udF-vG-EuX">
+                                <rect key="frame" x="13" y="543" width="389" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="geographybutton.png"/>
+                                <connections>
+                                    <segue destination="26S-1l-AGb" kind="show" id="RWY-dB-igU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Ni-Fz-j4d" firstAttribute="trailing" secondItem="oV5-PS-iQT" secondAttribute="trailing" id="6dN-Er-t1m"/>
+                            <constraint firstItem="7Ni-Fz-j4d" firstAttribute="centerX" secondItem="V2B-gG-g2U" secondAttribute="centerX" id="BCx-YB-BiB"/>
+                            <constraint firstItem="7Ni-Fz-j4d" firstAttribute="top" secondItem="V2B-gG-g2U" secondAttribute="top" constant="-141" id="OFP-OY-6wL"/>
+                            <constraint firstItem="7Ni-Fz-j4d" firstAttribute="centerY" secondItem="V2B-gG-g2U" secondAttribute="centerY" constant="-284" id="k1K-Yx-um5"/>
+                            <constraint firstItem="7Ni-Fz-j4d" firstAttribute="leading" secondItem="oV5-PS-iQT" secondAttribute="leading" id="vh5-LR-w8n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oV5-PS-iQT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lessons" image="Education" id="mvc-71-Dkj"/>
+                    <navigationItem key="navigationItem" id="RBD-TV-7Oh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W27-94-IQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="-364"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="o41-0b-2gX">
+            <objects>
+                <viewController definesPresentationContext="YES" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="Ozp-Sf-0qQ" customClass="history" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RaH-ry-mj9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyI-KY-7EV">
+                                <rect key="frame" x="0.0" y="95" width="414" height="1405"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ows-Kn-RLk">
+                                        <rect key="frame" x="13" y="8" width="388" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bkthillbutton.png"/>
+                                        <connections>
+                                            <segue destination="w1d-og-Xj0" kind="show" id="2YA-XE-3eH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colourBar" translatesAutoresizingMaskIntoConstraints="NO" id="k9B-bz-4FT">
+                                <rect key="frame" x="0.0" y="56" width="414" height="5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To unlock more lessons, please purchase any Terra Pack from the Credits page." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9c-1A-eaI">
+                                <rect key="frame" x="47" y="531" width="320" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k9B-bz-4FT" firstAttribute="trailing" secondItem="jUD-YS-j6G" secondAttribute="trailing" id="6C7-U1-zzJ"/>
+                            <constraint firstItem="pyI-KY-7EV" firstAttribute="trailing" secondItem="jUD-YS-j6G" secondAttribute="trailing" id="CyC-9X-aOU"/>
+                            <constraint firstItem="pyI-KY-7EV" firstAttribute="top" secondItem="k9B-bz-4FT" secondAttribute="bottom" constant="2" id="Llk-lK-Ske"/>
+                            <constraint firstItem="k9B-bz-4FT" firstAttribute="top" secondItem="jUD-YS-j6G" secondAttribute="top" id="cai-aV-7GU"/>
+                            <constraint firstItem="k9B-bz-4FT" firstAttribute="leading" secondItem="jUD-YS-j6G" secondAttribute="leading" id="gFi-84-Gkm"/>
+                            <constraint firstItem="pyI-KY-7EV" firstAttribute="leading" secondItem="jUD-YS-j6G" secondAttribute="leading" id="lUO-Tc-ha7"/>
+                            <constraint firstAttribute="bottom" secondItem="pyI-KY-7EV" secondAttribute="bottom" id="wFc-7h-luo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jUD-YS-j6G"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="77W-xb-MGn"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="scrollview" destination="pyI-KY-7EV" id="jJa-qz-4pd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TB0-bW-Hu5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3192.753623188406" y="-1389.5089285714284"/>
+        </scene>
+        <!--mapreading_main-->
+        <scene sceneID="svH-4e-gld">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="mapreading_main" storyboardName="mapreading" referencedIdentifier="mapreading_main" id="TAa-BM-j92" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPB-cJ-ciR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4038" y="-742"/>
+        </scene>
+        <!--bukittimah_main-->
+        <scene sceneID="8KV-Qi-gim">
+            <objects>
+                <viewControllerPlaceholder storyboardName="bukittimah" referencedIdentifier="bukittimah_main" id="w1d-og-Xj0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHA-6A-nS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3760" y="-1730"/>
+        </scene>
+        <!--Checkpointlist-->
+        <scene sceneID="1Lx-bs-WFY">
+            <objects>
+                <viewController definesPresentationContext="YES" modalPresentationStyle="fullScreen" id="8dP-aj-5gH" customClass="checkpointlist" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E9Y-H0-Wxv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkpointheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="HnQ-OJ-Adw">
+                                <rect key="frame" x="0.0" y="-34" width="414" height="189"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="customtabbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="2cF-eH-Qan">
+                                <rect key="frame" x="-95" y="681" width="605" height="420"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAb-uS-r3d">
+                                <rect key="frame" x="-1" y="218" width="414" height="561"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66T-fa-C6Y">
+                                        <rect key="frame" x="14" y="0.0" width="391.06066535796157" height="84.005624410214949"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" image="CP1_not.png"/>
+                                        <connections>
+                                            <action selector="cp1:" destination="8dP-aj-5gH" eventType="touchUpInside" id="2C9-Ww-gDf"/>
+                                            <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="cZP-Zs-gsc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1J-5g-c5V">
+                                        <rect key="frame" x="14" y="78" width="391.06066535796157" height="84.005624410214949"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CP2_not.png"/>
+                                        <connections>
+                                            <action selector="cp2:" destination="8dP-aj-5gH" eventType="touchUpInside" id="dbf-iQ-AUD"/>
+                                            <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="KJx-Oj-eZy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvt-xp-9cJ">
+                                        <rect key="frame" x="14" y="237" width="391.06066535796157" height="84.005624410215006"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CP4_not.png"/>
+                                        <connections>
+                                            <action selector="cp4:" destination="8dP-aj-5gH" eventType="touchUpInside" id="Fd0-Qm-dS9"/>
+                                            <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="qpL-Wm-t8Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2S-AB-DOE">
+                                        <rect key="frame" x="14" y="316" width="391.06066535796157" height="84.005624410215006"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CP5_not.png"/>
+                                        <connections>
+                                            <action selector="cp4:" destination="8dP-aj-5gH" eventType="touchUpInside" id="AnO-DR-OK9"/>
+                                            <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="kKV-sh-gIK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDz-aw-EFf">
+                                        <rect key="frame" x="14" y="395" width="391.06066535796157" height="84.005624410215006"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CP6_not.png"/>
+                                        <connections>
+                                            <action selector="cp4:" destination="8dP-aj-5gH" eventType="touchUpInside" id="hZR-kT-1pc"/>
+                                            <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="grr-uP-Ae6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu7-Ou-uR1">
+                                        <rect key="frame" x="14" y="477" width="391.06066535796157" height="84.005624410215006"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CP7_not.png"/>
+                                        <connections>
+                                            <action selector="cp4:" destination="8dP-aj-5gH" eventType="touchUpInside" id="sXd-b9-r2G"/>
+                                            <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="hMO-hu-S3r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPQ-6y-REU">
+                                        <rect key="frame" x="14" y="556" width="391.06066535796157" height="84.005624410215006"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CP8_not.png"/>
+                                        <connections>
+                                            <action selector="cp4:" destination="8dP-aj-5gH" eventType="touchUpInside" id="vdb-5s-5me"/>
+                                            <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="UMJ-Rx-oTh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i50-cG-fe4">
+                                        <rect key="frame" x="14" y="157" width="391.06066535796157" height="84.005624410214921"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CP3_not.png"/>
+                                        <connections>
+                                            <action selector="cp3:" destination="8dP-aj-5gH" eventType="touchUpInside" id="XZk-e2-te5"/>
+                                            <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="V6G-X2-QMx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dms-62-ynf">
+                                        <rect key="frame" x="14" y="637" width="391.06066535796157" height="84.005624410215006"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CP9_not.png"/>
+                                        <connections>
+                                            <action selector="cp4:" destination="8dP-aj-5gH" eventType="touchUpInside" id="b9E-aE-rnT"/>
+                                            <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="TWz-yA-8bG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hR7-R6-U8H">
+                                <rect key="frame" x="0.0" y="153" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="resetbutton.png"/>
+                                <connections>
+                                    <action selector="reset:" destination="8dP-aj-5gH" eventType="touchUpInside" id="52g-G0-Q6y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJx-Km-xKB">
+                                <rect key="frame" x="338" y="153" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="infobutton.png"/>
+                                <connections>
+                                    <segue destination="E6u-oY-B43" kind="show" id="FQn-cH-QlF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GAb-uS-r3d" firstAttribute="top" secondItem="E9Y-H0-Wxv" secondAttribute="top" constant="218" id="Xzc-47-Pnx"/>
+                            <constraint firstItem="GAb-uS-r3d" firstAttribute="leading" secondItem="E9Y-H0-Wxv" secondAttribute="leading" id="aau-KQ-p6b"/>
+                            <constraint firstAttribute="trailing" secondItem="GAb-uS-r3d" secondAttribute="trailing" id="j6p-Y8-mB2"/>
+                            <constraint firstAttribute="bottom" secondItem="GAb-uS-r3d" secondAttribute="bottom" constant="104" id="vws-Pt-iqf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yXb-f7-c6g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8ze-DC-760"/>
+                    <connections>
+                        <outlet property="CP1" destination="66T-fa-C6Y" id="bYI-tE-qci"/>
+                        <outlet property="CP2" destination="f1J-5g-c5V" id="4sK-gr-G3e"/>
+                        <outlet property="CP3" destination="i50-cG-fe4" id="ErN-Y6-3eD"/>
+                        <outlet property="CP4" destination="uvt-xp-9cJ" id="gWT-ax-Po5"/>
+                        <outlet property="CP5" destination="N2S-AB-DOE" id="DGK-J4-Jsa"/>
+                        <outlet property="CP6" destination="nDz-aw-EFf" id="Tob-Qe-OB5"/>
+                        <outlet property="CP7" destination="iu7-Ou-uR1" id="Ddd-qV-Okh"/>
+                        <outlet property="CP8" destination="PPQ-6y-REU" id="Yl9-bd-NPx"/>
+                        <outlet property="CP9" destination="Dms-62-ynf" id="WYn-iV-2eV"/>
+                        <outlet property="scrollview" destination="GAb-uS-r3d" id="ULd-q2-5yc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWN-yg-e5U" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1610.144927536232" y="1401.5625"/>
+        </scene>
+        <!--Climatechange-->
+        <scene sceneID="my1-2N-bxH">
+            <objects>
+                <viewController definesPresentationContext="YES" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="VaQ-cb-h5n" customClass="climatechange" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Cc-xF-s4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colourBar" translatesAutoresizingMaskIntoConstraints="NO" id="Ewc-HW-fQW">
+                                <rect key="frame" x="0.0" y="56" width="414" height="5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To unlock more lessons, please purchase any Terra Pack from the Credits page." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-aO-TbT">
+                                <rect key="frame" x="47" y="531" width="320" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-4I-jgb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1412"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyf-q3-rM5">
+                                        <rect key="frame" x="13" y="8" width="388" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="climatechangelesson.png"/>
+                                        <connections>
+                                            <action selector="rainforest:" destination="26S-1l-AGb" eventType="touchUpInside" id="cQT-30-trq"/>
+                                            <segue destination="3JL-g2-rbf" kind="show" id="hhI-62-Br9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qWS-4I-jgb" firstAttribute="top" secondItem="Ewc-HW-fQW" secondAttribute="bottom" constant="1" id="4Af-ic-BGw"/>
+                            <constraint firstItem="Ewc-HW-fQW" firstAttribute="trailing" secondItem="gKl-j8-Iv6" secondAttribute="trailing" id="87B-rH-nck"/>
+                            <constraint firstItem="Ewc-HW-fQW" firstAttribute="trailing" secondItem="gKl-j8-Iv6" secondAttribute="trailing" id="GpD-ne-zK1"/>
+                            <constraint firstItem="Ewc-HW-fQW" firstAttribute="top" secondItem="gKl-j8-Iv6" secondAttribute="top" id="JIt-Fp-BQY"/>
+                            <constraint firstAttribute="bottom" secondItem="qWS-4I-jgb" secondAttribute="bottom" id="M6U-WW-tk0"/>
+                            <constraint firstItem="Ewc-HW-fQW" firstAttribute="leading" secondItem="gKl-j8-Iv6" secondAttribute="leading" id="OTF-bZ-IqX"/>
+                            <constraint firstItem="qWS-4I-jgb" firstAttribute="leading" secondItem="gKl-j8-Iv6" secondAttribute="leading" id="hkj-Cd-5X4"/>
+                            <constraint firstItem="qWS-4I-jgb" firstAttribute="trailing" secondItem="gKl-j8-Iv6" secondAttribute="trailing" id="jqn-gQ-Pfc"/>
+                            <constraint firstItem="Ewc-HW-fQW" firstAttribute="top" secondItem="gKl-j8-Iv6" secondAttribute="top" id="kKw-hR-8Kv"/>
+                            <constraint firstItem="Ewc-HW-fQW" firstAttribute="leading" secondItem="gKl-j8-Iv6" secondAttribute="leading" id="tBt-Sp-x0y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gKl-j8-Iv6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="st6-hP-m2S"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="scrollview" destination="qWS-4I-jgb" id="Cac-tP-78u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FUq-w0-Qj1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437.68115942029" y="760.71428571428567"/>
+        </scene>
+        <!--climatechange_main-->
+        <scene sceneID="fiZ-aU-Bvg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="climatechange_main" storyboardName="climatechange" referencedIdentifier="climatechange_main" id="3JL-g2-rbf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EhB-uB-3IZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3135" y="373"/>
+        </scene>
+        <!--Geography-->
+        <scene sceneID="bGS-Th-DMy">
+            <objects>
+                <viewController definesPresentationContext="YES" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="26S-1l-AGb" customClass="geography" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WA2-Po-Ehs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colourBar" translatesAutoresizingMaskIntoConstraints="NO" id="qQi-FY-M7I">
+                                <rect key="frame" x="0.0" y="56" width="414" height="5"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-CR-MfR">
+                                <rect key="frame" x="0.0" y="93" width="414" height="1407"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suv-LY-2cA">
+                                        <rect key="frame" x="13" y="8" width="388" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="mapreading.png"/>
+                                        <connections>
+                                            <action selector="mapreading:" destination="26S-1l-AGb" eventType="touchUpInside" id="zUl-51-CCV"/>
+                                            <segue destination="TAa-BM-j92" kind="show" id="Fth-6z-zhe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COZ-hG-0Tn">
+                                        <rect key="frame" x="13" y="241" width="388" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="trf_characteristics.png"/>
+                                        <connections>
+                                            <action selector="rainforest:" destination="26S-1l-AGb" eventType="touchUpInside" id="jv8-KA-gXr"/>
+                                            <segue destination="FEM-2K-eEw" kind="show" id="dap-U1-CCY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To unlock more lessons, please purchase any Terra Pack from the Credits page." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO7-sz-SsR">
+                                <rect key="frame" x="47" y="531" width="320" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qQi-FY-M7I" firstAttribute="top" secondItem="NO6-Qq-6qH" secondAttribute="top" id="6Ts-II-4jU"/>
+                            <constraint firstItem="cd7-CR-MfR" firstAttribute="trailing" secondItem="NO6-Qq-6qH" secondAttribute="trailing" id="9l1-vx-tKJ"/>
+                            <constraint firstAttribute="bottom" secondItem="cd7-CR-MfR" secondAttribute="bottom" id="gTc-yZ-vHU"/>
+                            <constraint firstItem="cd7-CR-MfR" firstAttribute="leading" secondItem="NO6-Qq-6qH" secondAttribute="leading" id="gri-rY-v21"/>
+                            <constraint firstItem="qQi-FY-M7I" firstAttribute="trailing" secondItem="NO6-Qq-6qH" secondAttribute="trailing" id="pny-XN-hBX"/>
+                            <constraint firstItem="qQi-FY-M7I" firstAttribute="leading" secondItem="NO6-Qq-6qH" secondAttribute="leading" id="w44-hs-TqV"/>
+                            <constraint firstItem="cd7-CR-MfR" firstAttribute="top" secondItem="qQi-FY-M7I" secondAttribute="bottom" id="xf2-Us-YaP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NO6-Qq-6qH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="70b-co-G1G">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Edh-Oh-xP7"/>
+                    </navigationItem>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="scrollview" destination="cd7-CR-MfR" id="TLb-x2-edi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3P-y1-Z4V" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3469.5652173913045" y="-348.21428571428572"/>
+        </scene>
+        <!--trf_main-->
+        <scene sceneID="lTu-zj-Phe">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="trf.main" storyboardName="trf" referencedIdentifier="trf_main" id="FEM-2K-eEw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abQ-RU-fhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4002" y="-253"/>
+        </scene>
+        <!--CP List-->
+        <scene sceneID="FKm-tW-Q1A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OGf-hH-IvF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CP List" image="List" id="vHb-gA-Wve"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="XWp-UI-8og">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="25"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8dP-aj-5gH" kind="relationship" relationship="rootViewController" id="wsg-b5-ulk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEd-P0-nDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1607" y="360"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="YAS-RQ-Q0I">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" definesPresentationContext="YES" modalPresentationStyle="fullScreen" id="Wu0-SF-hIr" customClass="map" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OOc-pz-Zav">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="dEr-Os-Dtv">
+                                <rect key="frame" x="0.0" y="-34" width="414" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="customtabbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ql5-xW-0Uq">
+                                <rect key="frame" x="-95" y="681" width="605" height="420"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="s9P-UD-Xfg">
+                                <rect key="frame" x="0.0" y="156" width="414" height="582"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2019-09-07 at 1.24.44 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="KQc-8n-tIg">
+                                        <rect key="frame" x="0.0" y="0.0" width="2028" height="1790"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KQc-8n-tIg" firstAttribute="leading" secondItem="s9P-UD-Xfg" secondAttribute="leading" id="bGO-9n-Evv"/>
+                                    <constraint firstAttribute="bottom" secondItem="KQc-8n-tIg" secondAttribute="bottom" id="lLI-h8-b27"/>
+                                    <constraint firstItem="KQc-8n-tIg" firstAttribute="top" secondItem="s9P-UD-Xfg" secondAttribute="top" id="x18-71-ZXl"/>
+                                    <constraint firstAttribute="trailing" secondItem="KQc-8n-tIg" secondAttribute="trailing" id="yHr-qv-f3I"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C00-4q-asT">
+                                <rect key="frame" x="112" y="163" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s9P-UD-Xfg" firstAttribute="top" secondItem="OOc-pz-Zav" secondAttribute="top" constant="156" id="RD2-lq-KFd"/>
+                            <constraint firstAttribute="trailing" secondItem="s9P-UD-Xfg" secondAttribute="trailing" id="ZSO-Z7-Qvc"/>
+                            <constraint firstAttribute="bottom" secondItem="s9P-UD-Xfg" secondAttribute="bottom" constant="104" id="pFi-k0-cct"/>
+                            <constraint firstItem="s9P-UD-Xfg" firstAttribute="leading" secondItem="OOc-pz-Zav" secondAttribute="leading" id="rjr-OK-Llh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rNE-Y0-8v3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="Ajt-vR-pt3"/>
+                    <connections>
+                        <outlet property="imageView" destination="KQc-8n-tIg" id="HK3-9c-X9G"/>
+                        <outlet property="scrollView" destination="s9P-UD-Xfg" id="1Hi-fx-twl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ci-0u-tNp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560.86956521739137" y="359.59821428571428"/>
+        </scene>
+        <!--Lessons-->
+        <scene sceneID="76y-yE-r9g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" modalPresentationStyle="fullScreen" id="ywZ-iV-5eI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lessons" image="Education" id="CYD-Nj-Ezz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d1l-qd-sH4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="25"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="25"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tbc-EB-n2a" kind="relationship" relationship="rootViewController" id="m8a-zi-Eeo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aro-xw-iPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1587" y="-364"/>
+        </scene>
+        <!--Terralessons-->
+        <scene sceneID="E9x-vd-fca">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="y4C-RS-zAR" customClass="terralessons" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YE1-ZU-g6k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="terraprogress.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hio-TO-06f">
+                                <rect key="frame" x="-1" y="-5" width="415" height="906"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoV-ii-VCF">
+                                <rect key="frame" x="113" y="735" width="187" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="gradientstarted.png"/>
+                                <connections>
+                                    <segue destination="XXT-Mm-Pc0" kind="show" id="Qcx-IJ-h84"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g1p-G8-ehP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhF-0J-ljO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1336" y="-364"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="JpF-ER-jhj">
+            <objects>
+                <viewController storyboardIdentifier="info" modalPresentationStyle="fullScreen" id="hJo-Le-9n1" customClass="info" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Bn-5X-d59">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="terralessons.png" translatesAutoresizingMaskIntoConstraints="NO" id="FhL-xW-nCE">
+                                <rect key="frame" x="0.0" y="-5" width="415" height="906"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKu-ck-5zl">
+                                <rect key="frame" x="114" y="733" width="187" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="gradientnext.png"/>
+                                <connections>
+                                    <segue destination="y4C-RS-zAR" kind="show" id="ogQ-7z-TYh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="d5b-Va-mQc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVn-Dg-j7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2168.1159420289855" y="-364.28571428571428"/>
+        </scene>
+        <!--Welcomescreen-->
+        <scene sceneID="Kpe-ta-qil">
+            <objects>
+                <viewController storyboardIdentifier="welcome" id="ikC-qu-Gtr" customClass="welcomescreen" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q85-ol-mXc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="terrawelcome.png" translatesAutoresizingMaskIntoConstraints="NO" id="H94-zw-Ks6">
+                                <rect key="frame" x="-1" y="-5" width="415" height="906"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6P-I9-Rbj">
+                                <rect key="frame" x="114" y="471" width="187" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="whitenext.png"/>
+                                <connections>
+                                    <segue destination="hJo-Le-9n1" kind="show" id="Wme-mz-gdu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4zY-Zz-rp2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tyg-lP-cPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2997.1014492753625" y="-364.28571428571428"/>
+        </scene>
+        <!--TBC-->
+        <scene sceneID="mZx-Sc-P5w">
+            <objects>
+                <tabBarController storyboardIdentifier="main" wantsFullScreenLayout="YES" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="fullScreen" id="XXT-Mm-Pc0" customClass="TBC" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="FF4D00-0.png" id="Trh-W9-APM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OGf-hH-IvF" kind="relationship" relationship="viewControllers" id="w59-Nq-ZcC"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="TQT-X4-QHg"/>
+                        <segue destination="ywZ-iV-5eI" kind="relationship" relationship="viewControllers" id="uP0-d5-NzR"/>
+                        <segue destination="Wu0-SF-hIr" kind="relationship" relationship="viewControllers" id="7AZ-eq-mhu"/>
+                        <segue destination="kan-kK-O1i" kind="relationship" relationship="viewControllers" id="yw2-C2-Yh8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOc-DQ-iec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559" y="-364"/>
+        </scene>
+        <!--OEE-->
+        <scene sceneID="g6e-bk-Mb5">
+            <objects>
+                <viewController definesPresentationContext="YES" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="E6u-oY-B43" customClass="cphelp" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ffF-lI-Kvf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgA-Gg-QCg">
+                                <rect key="frame" x="30" y="-210" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colourBar" translatesAutoresizingMaskIntoConstraints="NO" id="wcw-4i-Tp0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to use: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S21-Du-6dd">
+                                <rect key="frame" x="153" y="131" width="108" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anS-QJ-c2e">
+                                <rect key="frame" x="8" y="167" width="399" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">When the correct Checkpoint (CP) code is entered in the 'OEE' page, the corresponding CP will turn green and it's status changed to 'Reached'.</string>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CP1_reached.png" translatesAutoresizingMaskIntoConstraints="NO" id="1dM-eP-6xw">
+                                <rect key="frame" x="37" y="247" width="341" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rcT-oe-Vpb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="OEE" image="OEE" id="jBf-n0-Pcw"/>
+                    <navigationItem key="navigationItem" id="jRQ-v7-t4P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0b-6Z-ZXi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-501.44927536231887" y="1401.5625"/>
+        </scene>
+        <!--Credits-->
+        <scene sceneID="ujB-hY-4Vc">
+            <objects>
+                <viewController definesPresentationContext="YES" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="kan-kK-O1i" customClass="credits" customModule="Terra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c8C-g2-hEB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Op-k7-qY1">
+                                <rect key="frame" x="30" y="-210" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="creditsheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="YwF-U7-JQ2">
+                                <rect key="frame" x="0.0" y="-34" width="414" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="customtabbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ezq-Gd-rFV">
+                                <rect key="frame" x="-95" y="681" width="605" height="420"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWx-WW-asm">
+                                <rect key="frame" x="13" y="703" width="389" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="aboutbutton.png"/>
+                                <connections>
+                                    <action selector="about:" destination="kan-kK-O1i" eventType="touchUpInside" id="Rko-R7-KYO"/>
+                                    <action selector="history:" destination="Tbc-EB-n2a" eventType="touchUpInside" id="kdE-gK-V6I"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="creditspage.png" translatesAutoresizingMaskIntoConstraints="NO" id="ogV-tx-Wor">
+                                <rect key="frame" x="0.0" y="156" width="414" height="550"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qQq-e9-Sjz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Credits" image="Account" id="jTu-sX-Mbu"/>
+                    <navigationItem key="navigationItem" id="WLH-zP-ge0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZb-QC-h7A" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.85507246376812" y="-1059.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Account" width="30" height="30"/>
+        <image name="CP1_not.png" width="303" height="65"/>
+        <image name="CP1_reached.png" width="303" height="65"/>
+        <image name="CP2_not.png" width="303" height="65"/>
+        <image name="CP3_not.png" width="303" height="65"/>
+        <image name="CP4_not.png" width="303" height="65"/>
+        <image name="CP5_not.png" width="303" height="65"/>
+        <image name="CP6_not.png" width="303" height="65"/>
+        <image name="CP7_not.png" width="303" height="65"/>
+        <image name="CP8_not.png" width="303" height="65"/>
+        <image name="CP9_not.png" width="303" height="65"/>
+        <image name="Education" width="30" height="30"/>
+        <image name="FF4D00-0.png" width="1" height="1"/>
+        <image name="Group 1628.png" width="375" height="557"/>
+        <image name="List" width="30" height="30"/>
+        <image name="Map" width="30" height="30"/>
+        <image name="OEE" width="30" height="30"/>
+        <image name="Screenshot 2019-09-07 at 1.24.44 AM.png" width="1014" height="895"/>
+        <image name="aboutbutton.png" width="303" height="65"/>
+        <image name="bkthillbutton.png" width="281" height="167"/>
+        <image name="checkpointheader.png" width="375" height="171"/>
+        <image name="climatechangebutton.png" width="303" height="65"/>
+        <image name="climatechangelesson.png" width="272" height="158.66667175292969"/>
+        <image name="colourBar" width="375" height="5"/>
+        <image name="creditsheader.png" width="375" height="171"/>
+        <image name="creditspage.png" width="340.33334350585938" height="540"/>
+        <image name="customtabbar.png" width="564" height="376"/>
+        <image name="geographybutton.png" width="303" height="65"/>
+        <image name="gradientButton" width="314" height="80.5"/>
+        <image name="gradientTextfield" width="314" height="80.5"/>
+        <image name="gradientnext.png" width="168.33332824707031" height="50"/>
+        <image name="gradientstarted.png" width="168.33332824707031" height="50"/>
+        <image name="historybutton.png" width="303" height="65.666664123535156"/>
+        <image name="infobutton.png" width="66.333335876464844" height="65"/>
+        <image name="mapheader.png" width="375" height="171"/>
+        <image name="mapreading.png" width="278" height="164"/>
+        <image name="oeeheader.png" width="375" height="171"/>
+        <image name="resetbutton.png" width="65" height="65"/>
+        <image name="terralessons.png" width="375" height="812"/>
+        <image name="terraprogress.png" width="375" height="812"/>
+        <image name="terrawelcome.png" width="375" height="812"/>
+        <image name="trf_characteristics.png" width="272" height="158"/>
+        <image name="whitenext.png" width="168.33332824707031" height="50"/>
+    </resources>
+</document>
